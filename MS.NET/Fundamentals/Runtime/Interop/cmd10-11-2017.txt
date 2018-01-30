@@ -1,0 +1,66 @@
+cd MS.NET\Fundamentals\Runtime
+subst s: .
+d:
+s:
+cd Interop
+dir
+doskey np=notepad $*
+np legacy\include\hashenc.h
+np legacy\include\invest.h
+np legacy\include\asset.h
+dumpbin /exports legacy\x86\asset.dll
+np pinvoketest1.cs
+csc pinvoketest1.cs
+csc /platform:x86 pinvoketest1.cs
+pinvoketest1.exe
+csc /platform:x86 pinvoketest1.cs
+pinvoketest1.exe
+dumpbin /exports legacy\x86\hashenc.dll
+np legacy\include\hashenc.h
+copy pinvoketest1.cs pinvoketest2.cs
+np pinvoketest2.cs
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe
+np legacy\include\invest.h
+copy pinvoketest1.cs pinvoketest3.cs
+np pinvoketest3.cs
+csc /platform:x86 pinvoketest3.cs
+pinvoketest3.exe
+csc /platform:x86 pinvoketest3.cs
+pinvoketest3.exe
+legacy\x86\quadeq.exe
+np legacy\include\quadeq.idl
+tlbimp legacy\x86\quadeq.exe
+ildasm QuadEq.dll
+copy pinvoketest1.cs rcwtest1.cs
+np rcwtest1.cs
+ildasm QuadEq.dll
+ildasm pinvoketest1.exe
+ildasm QuadEq.dll
+csc rcwtest1.cs /r:QuadEq.dll
+rcwtest1.exe
+csc /platform:x86 rcwtest1.cs /r:QuadEq.dll
+rcwtest1.exe
+np legacy\include\finance.idl
+tlbimp legacy\x86\finance.dll
+copy rcwtest1.cs rcwtest2.cs
+np rcwtest2.cs
+ildasm FinanceLib.dll
+csc /platform:x86 rcwtest1.cs /link:FinanceLib.dll
+csc /platform:x86 rcwtest2.cs /link:FinanceLib.dll
+csc /platform:x86 rcwtest1.cs /link:FinanceLib.dll
+csc /platform:x86 rcwtest2.cs /link:FinanceLib.dll
+rcwtest2.exe
+copy rcwtest2.cs ccwtest.cs
+np ccwtest.cs
+csc /platform:x86 ccwtest.cs /link:FinanceLib.dll
+ccwtest.exe
+regedit
+np legacy\aircargo.wsc
+np dynamiccomtest.cs
+regedit
+csc /platform:x86 dynamiccomtest.cs
+dynamiccomtest.exe 5 700
+doskey /h >cmd10-11-2017.txt

@@ -1,0 +1,115 @@
+    1  vi AutoBoxTest2.java 
+    2  javac AutoBoxTest2.java 
+    3  java AutoBoxTest2 3
+    4  java AutoBoxTest2 -5
+    5  vi AutoBoxTest2.java 
+    6  javac AutoBoxTest2.java 
+    7  java AutoBoxTest2 -5
+    8  java AutoBoxTest2 3
+    9  vi AutoBoxTest2.java 
+   10  cp AutoBoxTest2.java GenMethodTest.java 
+   11  vi GenMethodTest.java 
+   12  javac GenMethodTest.java 
+   13  vi GenMethodTest.java 
+   14  javac GenMethodTest.java 
+   15  java GenMethodTest -5
+   16  java GenMethodTest 3
+   17  vi GenMethodTest.java 
+   18  cp GenMethodTest.java GenBoundTest.java 
+   19  vi GenBoundTest.java 
+   20  javac GenBoundTest.java 
+   21  vi GenBoundTest.java 
+   22  javap java.lang.String
+   23  javap java.lang.Double
+   24  javac GenBoundTest.java 
+   25  java GenBoundTest 
+   26  cp ../../Language/OOP/Interval.java .
+   27  javac Interval.java 
+   28  vi GenBoundTest.java 
+   29  javac GenBoundTest.java 
+   30  vi Interval.java 
+   31  javac Interval.java 
+   32  javac GenBoundTest.java 
+   33  java GenBoundTest 
+   34  vi GenClassTest.java 
+   35  javac GenClassTest.java 
+   36  vi GenClassTest.java 
+   37  javac GenClassTest.java 
+   38  java GenClassTest
+   39  vi GenClassTest.java 
+   40  javac GenClassTest.java 
+   41  java GenClassTest
+   42  vi GenClassTest.java 
+   43  javac GenClassTest.java 
+   44  java GenClassTest
+   45  vi GenClassTest.java 
+   46  javac GenClassTest.java 
+   47  java GenClassTest
+   48  cp GenClassTest.java GenWildCardTest.java
+   49  vi GenWildCardTest.java 
+   50  javac GenWildCardTest.java 
+   51  java GenWildCardTest
+   52  vi GenWildCardTest.java 
+   53  javac GenWildCardTest.java 
+   54  java GenWildCardTest
+   55  vi GenWildCardTest.java 
+   56  javac GenWildCardTest.java 
+   57  vi GenWildCardTest.java 
+   58  javac GenWildCardTest.java 
+   59  java GenWildCardTest
+   60  vi GenWildCardTest.java 
+   61  javac GenWildCardTest.java 
+   62  vi GenWildCardTest.java 
+   63  javac GenWildCardTest.java 
+   64  vi GenWildCardTest.java 
+   65  javac GenWildCardTest.java 
+   66  java GenWildCardTest
+   67  vi GenWildCardTest.java 
+   68  javac GenWildCardTest.java 
+   69  java GenWildCardTest
+   70  vi GenWildCardTest.java 
+   71  javac GenWildCardTest.java 
+   72  vi GenWildCardTest.java 
+   73  javac GenWildCardTest.java 
+   74  java GenWildCardTest
+   75  vi GenWildCardTest.java 
+   76  javap java.lang.Iterable
+   77  javap java.util.Iterator
+   78  cp GenClassTest.java IterationTest.java 
+   79  vi IterationTest.java 
+   80  javac IterationTest.java 
+   81  java IterationTest
+   82  vi IterationTest.java 
+   83  javac IterationTest.java 
+   84  vi IterationTest.java 
+   85  javac IterationTest.java 
+   86  vi IterationTest.java 
+   87  javac IterationTest.java 
+   88  java IterationTest
+   89  vi IterationTest.java 
+   90  cd ..
+   91  mkdir Collections 
+   92  cd Collections/
+   93  cp ../Basics/Interval.java .
+   94  vi ArrayListTest.java 
+   95  javac ArrayListTest.java 
+   96  java ArrayListTest
+   97  cp ArrayListTest.java LinkedListTest.java
+   98  vi LinkedListTest.java 
+   99  javac LinkedListTest.java 
+  100  java LinkedListTest
+  101  cp ArrayListTest.java HashSetTest.java
+  102  vi HashSetTest.java 
+  103  javac HashSetTest.java 
+  104  vi HashSetTest.java 
+  105  javac HashSetTest.java 
+  106  java HashSetTest
+  107  cp HashSetTest.java TreeSetTest.java 
+  108  vi TreeSetTest.java 
+  109  javac TreeSetTest.java 
+  110  java TreeSetTest
+  111  vi TreeSetTest.java 
+  112  javac TreeSetTest.java 
+  113  java TreeSetTest
+  114  ll
+  115  history > cmd-30-11-2017.txt

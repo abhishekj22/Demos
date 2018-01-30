@@ -1,0 +1,70 @@
+    2  ll
+    3  ~/glassfish4/bin/asadmin start-domain 
+    4  ~/oracle/startxe 
+    5  cp product.jspx protected/invoice.jspx
+    6  vi protected/invoice.jspx 
+    7  cd WEB-INF/classes/
+    8  vi AuthenticationServlet.java 
+    9  javac -d . AuthenticationServlet.java 
+   10  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   11  javac -d . AuthenticationServlet.java 
+   12  touch ../../.reload 
+   13  vi ProtectionFilter.java 
+   14  javac -d . ProtectionFilter.java 
+   15  touch ../../.reload 
+   16  cd ..
+   17  mkdir JPAWebTest 
+   18  cd JPAWebTest/
+   19  mkidr WEB-INF
+   20  mkdir WEB-INF
+   21  mkdir WEB-INF/classes 
+   22  mkdir WEB-INF/classes/META-INF
+   23  cp ~/Shared/web/web.xml WEB-INF/
+   24  cp ~/Shared/web/persistence.xml WEB-INF/classes/META-INF/
+   25  vi WEB-INF/classes/META-INF/persistence.xml 
+   26  ~/glassfish4/bin/asadmin deploy .
+   27  cp ../../Web/JSFTest/WEB-INF/web.xml WEB-INF/
+   28  vi WEB-INF/web.xml 
+   29  cp ../../Web/JSFTest/view.xhtml index.xhtml
+   30  vi index.xhtml 
+   31  touch .reload 
+   32  cd WEB-INF/classes/
+   33  vi OrderEntity.java 
+   34  javac -d . OrderEntity.java 
+   35  vi OrderEntity.java 
+   36  javac -d . OrderEntity.java 
+   37  vi ProductEntity.java 
+   38  javac -d . ProductEntity.java 
+   39  vi ProductInfoBean.java 
+   40  javac -d . ProductInfoBean.java 
+   41  vi ProductInfoBean.java 
+   42  javac -d . ProductInfoBean.java 
+   43  vi ProductInfoBean.java 
+   44  javac -d . ProductInfoBean.java 
+   45  touch ../../.reload 
+   46  vi ../../index.xhtml 
+   47  vi ProductInfoBean.java 
+   48  javac -d . ProductInfoBean.java 
+   49  touch ../../.reload 
+   50  vi ../../index.xhtml 
+   51  vi ProductInfoBean.java 
+   52  javac -d . ProductInfoBean.java 
+   53  touch ../../.reload 
+   54  vi ../../index.xhtml 
+   55  cp ../../index.xhtml ../../details.xhtml
+   56  vi ../../details.xhtml 
+   57  vi CounterEntity.java 
+   58  javac -d . CounterEntity.java 
+   59  vi ProductMakerEJB.java 
+   60  javac -d . ProductMakerEJB.java 
+   61  vi ProductMakerEJB.java 
+   62  javac -d . ProductMakerEJB.java 
+   63  vi ProductInputBean.java 
+   64  javac -d . ProductInputBean.java 
+   65  touch ../../.reload 
+   66  cp ../../details.xhtml ../../create.xhtml
+   67  vi ../../create.xhtml 
+   68  ~/oracle/stopxe 
+   69  ~/glassfish4/bin/asadmin stop-domain 
+   75  cd ..
+   76  history > cmd-15-12-2017.txt 

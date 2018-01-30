@@ -1,0 +1,77 @@
+    1  mkdir Java 
+    2  cd Java/
+    3  mkdir Fundamentals 
+    4  cd Fundamentals/
+    5  mkdir Language
+    6  java -version
+    7  vi Hello.java 
+    8  javac Hello.java 
+    9  ll
+   10  java Greeter
+   11  cp Greeter.class ~/Shared/Testing/
+   12  mkdir Basics
+   13  cd Basics/
+   14  vi ForEachTest.java 
+   15  javac ForEachTest.java 
+   16  java ForEachTest Jack Jill John
+   17  java ForEachTest Jack and Jill John
+   18  java ForEachTest "Jack and Jill" John
+   19  vi ForEachTest.java 
+   20  javac ForEachTest.java 
+   21  java ForEachTest Jack Jill John
+   22  vi MethodTest.java 
+   23  javac MethodTest.java 
+   24  java MethodTest 75000 3
+   25  vi VarArgTest.java 
+   26  javac VarArgTest.java 
+   27  java VarArgTest
+   28  vi VarArgTest.java 
+   29  javac VarArgTest.java 
+   30  vi VarArgTest.java 
+   31  javac VarArgTest.java 
+   32  java VarArgTest
+   33  vi VarArgTest.java 
+   34  javac VarArgTest.java 
+   35  vi VarArgTest.java 
+   36  javac VarArgTest.java 
+   37  java VarArgTest
+   38  vi VarArgTest.java 
+   39  javac VarArgTest.java 
+   40  vi TryCatchTest.java 
+   41  javac TryCatchTest.java 
+   42  java TryCatchTest 1.5
+   43  java TryCatchTest
+   44  vi TryCatchTest.java 
+   45  javac TryCatchTest.java 
+   46  java TryCatchTest 1.5
+   47  java TryCatchTest
+   48  java TryCatchTest 1.O5
+   49  vi TryCatchTest.java 
+   50  javac TryCatchTest.java 
+   51  java TryCatchTest 1.5
+   52  java TryCatchTest
+   53  java TryCatchTest 1.O5
+   54  cp TryCatchTest.java TryFinallyTest.java
+   55  vi TryFinallyTest.java 
+   56  javac TryFinallyTest.java 
+   57  java TryFinallyTest 1.5
+   58  java TryFinallyTest
+   59  java TryFinallyTest 1.O5
+   60  vi TryFinallyTest.java 
+   61  javac TryFinallyTest.java 
+   62  java TryFinallyTest 1.5
+   63  java TryFinallyTest 1.O5
+   64  vi TryFinallyTest.java 
+   65  javac TryFinallyTest.java 
+   66  java TryFinallyTest 1.5
+   67  java TryFinallyTest 1.O5
+   68  vi TryFinallyTest.java 
+   69  vi SwitchStringTest.java 
+   70  javac SwitchStringTest.java 
+   71  java SwitchStringTest
+   72  cp SwitchStringTest.java SwitchEnumTest.java 
+   73  vi SwitchEnumTest.java 
+   74  javac SwitchEnumTest.java 
+   75  java SwitchEnumTest
+   76  vi SwitchEnumTest.java 
+   77  history > cmd-27-11-2017.txt

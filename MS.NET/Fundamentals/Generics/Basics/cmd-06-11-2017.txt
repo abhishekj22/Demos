@@ -1,0 +1,84 @@
+cls
+cd MS.NET\Fundamentals
+cls
+dir 
+cls
+die
+cls
+dir
+cls
+dir
+cls
+md Generics
+cd Generics
+subst s: . 
+s: 
+dir
+cls
+md Basics 
+cd Basics
+notepad autoboxtest.cs 
+csc autoboxtest.cs
+ildasm autoboxtest.exe 
+csc autoboxtest.cs
+ildasm autoboxtest.exe 
+notepad boxing.il
+csc autoboxtest.cs
+autoboxtest.exe 5
+csc autoboxtest.cs
+autoboxtest.exe 5
+autoboxtest.exe -3
+csc autoboxtest.cs
+autoboxtest.exe 5
+autoboxtest.exe -3
+csc autoboxtest.cs
+autoboxtest.exe -3
+autoboxtest.exe 5
+ildasm autoboxtest.exe 
+csc autoboxtest.cs
+autoboxtest.exe -3
+autoboxtest.exe 5
+copy autoboxtest.cs genmethodtest.cs
+notepad genmethodtest.cs
+csc genmethodtest.cs
+genmethodtest.exe -3
+genmethodtest.exe 5
+ildasm genmethodtest.exe
+notepad constrainttest.cs 
+csc constrainttest.cs
+constrainttest.exe
+copy e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+csc constrainttest.cs
+csc constrainttest.cs interval.cs
+notepad interval.cs
+csc constrainttest.cs interval.cs
+constrainttest.exe
+notepad genclasstest.cs 
+csc genclasstest.cs
+genclasstest.exe
+csc genclasstest.cs
+genclasstest.exe
+csc genclasstest.cs
+csc genclasstest.cs interval.cs
+genclasstest.exe
+csc genclasstest.cs interval.cs
+genclasstest.exe
+copy genclasstest.cs variancetest.cs 
+notepad variancetest.cs
+csc variancetest.cs
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+notepad nullvaltest.cs 
+csc nullvaltest.cs
+nullvaltest.exe
+csc nullvaltest.cs
+nullvaltest.exe
+doskey /h > cmd-06-11-2017.txt 

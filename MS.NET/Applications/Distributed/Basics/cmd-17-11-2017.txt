@@ -1,0 +1,43 @@
+cd MS.NET\Applications\Distributed
+subst s: .
+s: 
+md Basics
+cd Basics
+cls
+notepad strmsocktest.cs
+csc strmsocktest.cs
+start strmsocktest.exe
+netstat /noa
+start strmsocktest.exe
+notepad tcpclienttest.cs
+csc tcpclienttest.cs
+tcpclienttest.exe
+tcpclienttest.exe xyz
+tcpclienttest.exe khussain
+start strmsocktest.exe
+tcpclienttest.exe
+notepad strmsocktest.cs
+csc strmsocktest.cs
+start strmsocktest.exe
+tcpclienttest.exe
+notepad tcplistenertest.cs 
+csc tcplistenertest.cs
+start tcplistenertest.exe
+tcpclienttest.exe
+csc tcplistenertest.cs
+start tcplistenertest.exe
+tcpclienttest.exe
+copy strmsocktest.cs dgrmsocktest.cs 
+notepad dgrmsocktest.cs
+csc dgrmsocktest.cs
+start dgrmsocktest.exe
+copy tcpclienttest.cs udpclienttest.cs 
+notepad udpclienttest.cs
+csc udpclienttest.cs
+udpclienttest.exe
+notepad webclienttest.cs 
+ping khussain.met.edu
+csc webclienttest.cs
+webclienttest.exe monday
+webclienttest.exe NLMGBZ
+doskey /h > cmd-17-11-2017.txt

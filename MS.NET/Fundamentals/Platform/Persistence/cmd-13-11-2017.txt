@@ -1,0 +1,82 @@
+cd MS.NET\Fundamentals\
+dir
+cd Platform
+subst s: .
+s: 
+cd Concurrency
+cls
+notepad paralleltest1.cs 
+csc paralleltest1.cs worker.cs
+paralleltest1.exe
+notepad paralleltest2.cs 
+csc paralleltest2.cs worker.cs
+paralleltest2.exe
+md z:\Shared\Testing
+copy paralleltest2.exe z:\Shared\Testing
+cd ..
+md Persistence
+cd Persistence
+notepad filestrmtest.cs 
+csc filestrmtest.cs
+copy filestrmtest.cs data.txt
+notepad data.txt
+filestrmtest.exe data.txt
+notepad data.txt
+filestrmtest.exe data.txt
+notepad data.txt
+notepad memmapfiletest.cs 
+csc memmapfiletest.cs
+memmapfiletest.exe data.txt
+notepad data.txt
+copy filestrmtest.cs data.txt
+yes
+notepad data.txt
+csc memmapfiletest.cs
+data.txt
+memmapfiletest.exe data.txt
+data.txt
+memmapfiletest.exe data.txt
+data.txt
+notepad binaryiotest.cs 
+csc binaryiotest.cs
+binaryiotest.exe 4999.95 20000 hdd
+binaryiotest.exe
+dir
+notepad product.dat
+copy binaryiotest.cs textiotest.cs 
+notepad textiotest.cs
+csc textiotest.cs
+textiotest.exe 4999.95 20000 hdd
+textiotest.exe
+dir product.*
+notepad product.txt
+copy z:\Shared\hr.cs serhr.cs
+notepad serhr.cs
+csc /t:library serhr.cs
+notepad objsertest1.cs
+csc objsertest1.cs /r:serhr.dll
+objsertest1.exe Finance
+objsertest1.exe
+dir 
+notepad dept.dat
+csc /t:library serhr.cs
+objsertest1.exe Finance
+notepad dept.dat
+objsertest1.exe
+copy serhr.cs custserhr.cs 
+notepad custserhr.cs
+csc /t:library custserhr.cs
+csc objsertest1.cs /r:custserhr.dll
+objsertest1.exe Finance
+objsertest1.exe
+notepad dept.dat
+notepad objsertest2.cs 
+csc objsertest2.cs /r:serhr.dll
+objsertest2.exe
+csc objsertest2.cs /r:serhr.dll
+objsertest2.exe
+csc objsertest2.cs /r:serhr.dll
+objsertest2.exe
+csc objsertest2.cs /r:custserhr.dll
+objsertest2.exe
+doskey /h > cmd-13-11-2017.txt 

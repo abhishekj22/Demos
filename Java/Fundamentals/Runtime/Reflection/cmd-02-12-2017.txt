@@ -1,0 +1,103 @@
+    1  vi finance/ReducingBalance.java 
+    2  javac finance/ReducingBalance.java 
+    3  vi finance/HomeLoan.java 
+    4  javac finance/HomeLoan.java 
+    5  vi finance/PersonalLoan.java 
+    6  javac finance/PersonalLoan.java 
+    7  vi finance/ReducingBalance.java 
+    8  javac finance/ReducingBalance.java 
+    9  javac finance/HomeLoan.java 
+   10  javac finance/PersonalLoan.java 
+   11  vi finance/ReducingBalance.java 
+   12  javac finance/ReducingBalance.java 
+   13  javac finance/HomeLoan.java 
+   14  javac finance/PersonalLoan.java 
+   15  vi finance/PersonalLoan.java 
+   16  javac finance/PersonalLoan.java 
+   17  cp EarlyBindTest.java AnnotationTest1.java 
+   18  vi AnnotationTest1.java 
+   19  javac AnnotationTest1.java 
+   20  java AnnotationTest1 500000 finance.PersonalLoan
+   21  java AnnotationTest1 500000 finance.EducationLoan
+   22  java AnnotationTest1 500000 finance.HomeLoan
+   23  vi finance/MaxDuration.java 
+   24  javac finance/MaxDuration.java 
+   25  vi finance/EducationLoan.java 
+   26  javac finance/EducationLoan.java 
+   27  vi finance/HomeLoan.java 
+   28  javac finance/HomeLoan.java 
+   29  vi finance/PersonalLoan.java 
+   30  javac finance/PersonalLoan.java 
+   31  cp LateBindTest.java AnnotationTest2.java 
+   32  vi AnnotationTest2.java 
+   33  javac AnnotationTest2.java 
+   34  java AnnotationTest2 500000 finance.HomeLoan interestRate
+   35  java AnnotationTest2 500000 finance.EducationLoan interestRate
+   36  java AnnotationTest2 500000 finance.PersonalLoan interestRate
+   37  java AnnotationTest2 500000 finance.PersonalLoan interestRateForEmployees
+   38  cp ../../Language/OOP/InterfaceTest1.class 
+   39  cp ../../Language/OOP/InterfaceTest1.class .
+   40  java InterfaceTest1 
+   41  javap java.lang.ClassLoader
+   42  java -cp .:../../Language/OOP/ InterfaceTest1
+   43  java InterfaceTest1 
+   44  export CLASSPATH=.:../../Language/OOP/
+   45  java InterfaceTest1 
+   46  unset CLASSPATH
+   47  java InterfaceTest1 
+   48  cd ../../Language/OOP/
+   49  jar cf banklib.jar edu
+   50  jar tf banklib.jar 
+   51  mv banklib.jar ../../Runtime/Reflection/
+   52  cd ../../Runtime/Reflection/
+   53  java InterfaceTest1
+   54  java -cp .:banklib.jar InterfaceTest1
+   55  vi ObjAccessTest.class 
+   56  java ObjAccessTest
+   57  javac ObjAccessTest.java 
+   58  java ObjAccessTest
+   59  javap -c ObjAccessTest
+   60  mkdir cmd-classes
+   61  mv ~/Shared/commands/ cmd-classes/
+   62  vi ClassLoaderTest.java 
+   63  javac ClassLoaderTest.java 
+   64  java ClassLoaderTest 
+   65  java -cp .:cmd-classes/ ClassLoaderTest
+   66  vi ClassLoaderTest.java 
+   67  javac ClassLoaderTest.java 
+   68  java ClassLoaderTest 
+   69  vi ClassLoaderTest.java 
+   70  javac ClassLoaderTest.java 
+   71  java ClassLoaderTest 
+   72  java -cp .:cmd-classes/ ClassLoaderTest
+   73  vi ClassLoaderTest.java 
+   74  cp ClassLoaderTest.java SandboxTest.java 
+   75  mv SandboxTest.java SecurityTest.java 
+   76  vi SecurityTest.java 
+   77  javac SecurityTest.java 
+   78  java SecurityTest 
+   79  vi SecurityTest.java 
+   80  javac SecurityTest.java 
+   81  vi SecurityTest.java 
+   82  javac SecurityTest.java 
+   83  vi SecurityTest.java 
+   84  javac SecurityTest.java 
+   85  vi SecurityTest.java 
+   86  javac SecurityTest.java 
+   87  java SecurityTest
+   88  cp ~/Shared/Greeter.java .
+   89  vi Greeter.java 
+   90  javac Greeter.java 
+   91  vi DynamicProxyTest.java 
+   92  javac DynamicProxyTest.java 
+   93  java DynamicProxyTest
+   94  vi DynamicProxyTest.java 
+   95  javac DynamicProxyTest.java 
+   96  java DynamicProxyTest
+   97  vi DynamicProxyTest.java 
+   98  javac DynamicProxyTest.java 
+   99  vi DynamicProxyTest.java 
+  100  javac DynamicProxyTest.java 
+  101  java DynamicProxyTest
+  102  vi DynamicProxyTest.java
+  103  history > cmd-02-12-2017.txt 

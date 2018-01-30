@@ -1,0 +1,89 @@
+    1  vi InterfaceTest2.java 
+    2  javac InterfaceTest2.java 
+    3  vi InterfaceTest2.java 
+    4  javac InterfaceTest2.java 
+    5  java InterfaceTest2 
+    6  vi InterfaceTest2.java 
+    7  vi InnerClassTest.java 
+    8  javac InnerClassTest.java 
+    9  vi InnerClassTest.java 
+   10  javac InnerClassTest.java 
+   11  vi InnerClassTest.java 
+   12  javac InnerClassTest.java 
+   13  java InnerClassTest 
+   14  vi InnerClassTest.java 
+   15  ll *.class
+   16  vi InnerClassTest.java 
+   17  javac InnerClassTest.java 
+   18  vi InnerClassTest.java 
+   19  javac InnerClassTest.java 
+   20  java InnerClassTest 
+   21  ll *.class
+   22  vi InnerClassTest.java 
+   23  javac InnerClassTest.java 
+   24  java InnerClassTest 
+   25  ll *.class
+   26  vi InnerClassTest.java 
+   27  javac InnerClassTest.java 
+   28  vi InnerClassTest.java 
+   29  javac InnerClassTest.java 
+   30  java InnerClassTest 
+   31  javac -source 1.6 InnerClassTest.java 
+   32  vi InnerClassTest.java 
+   33  javac -source 1.6 InnerClassTest.java 
+   34  cp InnerClassTest.java LambdaTest.java 
+   35  vi LambdaTest.java 
+   36  javac LambdaTest.java 
+   37  java LambdaTest
+   38  ll LambdaTest*.class
+   39  vi LambdaTest.java 
+   40  javac LambdaTest.java 
+   41  java LambdaTest
+   42  vi LambdaTest.java 
+   43  javac LambdaTest.java 
+   44  java LambdaTest
+   45  javap -p LambdaTest
+   46  vi LambdaTest.java 
+   47  vi GCTest.java 
+   48  javac GCTest.java 
+   49  vi GCTest.java 
+   50  javac GCTest.java 
+   51  java GCTest
+   52  vi GCTest.java 
+   53  javac GCTest.java 
+   54  vi GCTest.java 
+   55  javac GCTest.java 
+   56  java GCTest
+   57  vi GCTest.java 
+   58  javac GCTest.java 
+   59  java GCTest
+   60  vi GCTest.java 
+   61  javac GCTest.java 
+   62  java GCTest
+   63  vi GCTest.java 
+   64  javac GCTest.java 
+   65  java GCTest
+   66  java GCTest 3
+   67  java GCTest abcd
+   68  vi GCTest.java 
+   69  javac GCTest.java 
+   70  java GCTest 3
+   71  java GCTest abcd
+   72  vi GCTest.java 
+   73  cd ..
+   74  mkdir Generic
+   75  cd Generic/
+   76  mkdir Basics 
+   77  cd Basics/
+   78  vi AutoBoxTest1.java 
+   79  javac AutoBoxTest1.java 
+   80  vi AutoBoxTest1.java 
+   81  javac AutoBoxTest1.java 
+   82  javac -source 1.4 AutoBoxTest1.java 
+   83  vi AutoBoxTest1.java 
+   84  javac AutoBoxTest1.java 
+   85  java AutoBoxTest1 john
+   86  java AutoBoxTest1 jeff
+   87  vi AutoBoxTest1.java 
+   88  javap -p -c AutoBoxTest1
+   89  history > cmd-29-11-2017.txt 

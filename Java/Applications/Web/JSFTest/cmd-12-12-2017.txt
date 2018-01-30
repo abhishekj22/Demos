@@ -1,0 +1,75 @@
+    2  ~/glassfish4/bin/asadmin start-domain
+    3  ll
+    4  cd ..
+    5  ll
+    6  cat cmd-11-12-2017.txt 
+    7  ll
+    8  cd Basics/
+    9  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   10  vi jsptest1.jsp
+   11  rm jsptest1.jsp 
+   12  vi beantest1.jsp
+   13  cp welcome.html beantest1.jsp 
+   14  vi beantest1.jsp
+   15  mv beantest1.jsp welcome.jsp 
+   16  vi welcome.jsp 
+   17  cd WEB-INF/classes/
+   18  vi basicwebapp/CounterBean.java
+   19  javac basicwebapp/CounterBean.java
+   20  cp ../../welcome.html ../../beantest1.jsp
+   21  vi ../../beantest1.jsp 
+   22  javac basicwebapp/CounterBean.java
+   23  vi basicwebapp/FormBean.java 
+   24  javac basicwebapp/FormBean.java 
+   25  touch ../../.reload 
+   26  cp ../../welcome.html ../../beantest2.jspx
+   27  vi ../../beantest2.jspx 
+   28  vi basicwebapp/ClockTag.java
+   29  javac basicwebapp/ClockTag.java
+   30  vi basicwebapp/ClockTag.java
+   31  javac basicwebapp/ClockTag.java
+   32  touch ../../.reload 
+   33  cp ~/Shared/web/taglib.tld ../basicwebapp.tld
+   34  vi ../basicwebapp.tld 
+   35  touch ../../.reload 
+   36  cp ../../welcome.html ../../tagtest1.jsp
+   37  vi ../../tagtest1.jsp 
+   38  vi basicwebapp/LottoTag.java 
+   39  javac basicwebapp/LottoTag.java 
+   40  vi ../basicwebapp.tld 
+   41  touch ../../.reload 
+   42  cp ../../welcome.html ../../tagtest2.jspx
+   43  vi ../../tagtest2.jspx 
+   44  cd ..
+   45  mkdir JSFTest
+   46  cd JSFTest/
+   47  mkdir WEB-INF
+   48  mkdir WEB-INF/classes
+   49  cp ~/Shared/web/web.xml WEB-INF/
+   50  ~/glassfish4/bin/asadmin deploy .
+   51  vi WEB-INF/web.xml 
+   52  vi index.xhtml
+   53  touch .reload
+   54  mv index.xhtml view.xhtml
+   55  cd WEB-INF/classes/
+   56  mkdir app
+   57  cp ../../../../Desktop/SwingMVCTest/Document.java .
+   58  cp ../../../../Desktop/SwingMVCTest/Visitor.java .
+   59  ll
+   60  javac -d . Document.java 
+   61  javac -d . Visitor.java 
+   62  vi Visitor.java 
+   63  vi VisitorManagedBean.java 
+   64  javac VisitorManagedBean.java 
+   65  touch ../../.reload 
+   66  vi ../../view.xhtml 
+   67  ll
+   68  rm VisitorManagedBean.class 
+   69  javac -d . VisitorManagedBean.java 
+   70  touch ../../.reload 
+   71  vi VisitorManagedBean.java 
+   72  vi ../../view.xhtml 
+   73  vi VisitorManagedBean.java 
+   74  ll
+   75  vi ../../view.xhtml 
+   76  history >cmd12-12-2017.txt

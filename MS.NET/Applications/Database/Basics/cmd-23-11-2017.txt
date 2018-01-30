@@ -1,0 +1,28 @@
+cd MS.NET\Applications\
+cd Database
+subst s: .
+s: 
+cd Basics
+dir 
+cls
+dir
+notepad updatetest.cs 
+csc updatetest.cs
+updatetest.exe 103
+updatetest.exe
+copy updatetest.cs paramsqltest.cs 
+notepad paramsqltest.cs
+csc paramsqltest.cs
+paramsqltest.exe CU102 104 8
+paramsqltest.exe CU103 106 7
+paramsqltest.exe CU103 105 7
+notepad db\Shop.sql
+copy paramsqltest.cs storproctest.cs 
+notepad storproctest.cs
+notepad db\Shop.sql
+csc storproctest.cs
+storproctest.exe CU101 102 4
+storproctest.exe CU105 103 7
+storproctest.exe CU102 103 7
+notepad
+doskey /h >cmd-23-11-2017.txt

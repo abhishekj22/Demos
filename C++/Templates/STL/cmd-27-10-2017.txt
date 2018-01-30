@@ -1,0 +1,88 @@
+    1  ll
+    2  cd Basics/
+    3  ll
+    4  cd ..
+    5  mkdir STL 
+    6  cd STL/
+    7  vi interval.h
+    8  vi vectortest.cpp
+    9  c++ -o vectortest vectortest.cpp 
+   10  vi vectortest.cpp
+   11  c++ -o vectortest vectortest.cpp 
+   12  ./vectortest 
+   13  vi vectortest.cpp
+   14  cp vectortest.cpp listtest.cpp 
+   15  vi listtest.cpp 
+   16  c++ -o listtest listtest.cpp 
+   17  vi listtest.cpp 
+   18  c++ -o listtest listtest.cpp 
+   19  ./listtest 
+   20  cp vectortest.cpp dequetest.cpp 
+   21  vi dequetest.cpp 
+   22  c++ -o dequetest dequetest.cpp 
+   23  ./dequetest 
+   24  cp vectortest.cpp settest.cpp 
+   25  vi settest.cpp 
+   26  c++ -o settest settest.cpp 
+   27  ./settest 
+   28  vi settest.cpp 
+   29  c++ -o settest settest.cpp 
+   30  vi settest.cpp 
+   31  c++ -o settest settest.cpp 
+   32  vi settest.cpp 
+   33  c++ -o settest settest.cpp 
+   34  ./settest 
+   35  cp settest.cpp maptest.cpp 
+   36  vi maptest.cpp 
+   37  c++ -o maptest maptest.cpp 
+   38  ./maptest 
+   39  vi maptest.cpp 
+   40  c++ -o maptest maptest.cpp 
+   41  ./maptest 
+   42  cp vectortest.cpp stacktest.cpp 
+   43  vi stacktest.cpp 
+   44  c++ -o stacktest stacktest.cpp 
+   45  ./stacktest 
+   46  vi stacktest.cpp 
+   47  c++ -o stacktest stacktest.cpp 
+   48  ./stacktest 
+   49  cp stacktest.cpp queuetest.cpp 
+   50  vi queuetest.cpp 
+   51  c++ -o queuetest queuetest.cpp 
+   52  ./queuetest 
+   53  vi queuetest.cpp 
+   54  c++ -o queuetest queuetest.cpp 
+   55  ./queuetest 
+   56  cp stacktest.cpp priorityquetest.cpp 
+   57  vi priorityquetest.cpp 
+   58  c++ -o priorityquetest priorityquetest.cpp 
+   59  ./priorityquetest 
+   60  vi priorityquetest.cpp 
+   61  c++ -o priorityquetest priorityquetest.cpp 
+   62  vi priorityquetest.cpp 
+   63  c++ -o priorityquetest priorityquetest.cpp 
+   64  ./priorityquetest 
+   65  vi priorityquetest.cpp 
+   66  c++ -o priorityquetest priorityquetest.cpp 
+   67  ./priorityquetest 
+   68  cp vectortest.cpp sorttest.cpp 
+   69  vi sorttest.cpp 
+   70  c++ -o sorttest sorttest.cpp 
+   71  ./sorttest 
+   72  vi sorttest.cpp 
+   73  c++ -o sorttest sorttest.cpp 
+   74  ./sorttest 
+   75  vi sorttest.cpp 
+   76  c++ -o sorttest sorttest.cpp 
+   77  ./sorttest 
+   78  cp sorttest.cpp copytest.cpp 
+   79  vi copytest.cpp 
+   80  c++ -o copytest copytest.cpp 
+   81  vi copytest.cpp 
+   82  c++ -o copytest copytest.cpp 
+   83  vi copytest.cpp 
+   84  c++ -o copytest copytest.cpp 
+   85  ./copytest 
+   86  vi maptest.cpp 
+   87  vi interval.h 
+   88  history > cmd-27-10-2017.txt

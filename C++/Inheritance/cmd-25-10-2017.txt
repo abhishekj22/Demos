@@ -1,0 +1,17 @@
+    1  vi middodtest.cpp
+    2  c++ -o middodtest middodtest.cpp 
+    3  ./middodtest 
+    4  vi middodtest.cpp
+    5  c++ -o middodtest middodtest.cpp 
+    6  vi middodtest.cpp
+    7  c++ -o middodtest middodtest.cpp 
+    8  ./middodtest 
+    9* c++ -o mivites
+   10  vi mivitest.cpp 
+   11  vi middodtest.cpp
+   12  vi mivitest.cpp 
+   13  c++ -o mivitest mivitest.cpp 
+   14  ./mivitest 
+   15  vi mivitest.cpp 
+   16  vi middodtest.cpp
+   17  history > cmd-25-10-2017.txt

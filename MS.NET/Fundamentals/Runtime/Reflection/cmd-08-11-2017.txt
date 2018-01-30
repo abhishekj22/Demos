@@ -1,0 +1,91 @@
+cd MS.NET\Fundamentals\
+cls
+md Runtime
+cd Runtime
+subst s: .
+s:
+cls
+dir
+md Reflection 
+cd Reflection
+cls
+copy e:\MS.NET\Fundamentals\Language\OOP\payroll2.cs payroll.cs 
+copy e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+csc /t:library payroll.cs
+notepad objaccesstest.cs 
+csc objaccesstest.cs interval.cs
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+notepad interval.cs
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+notepad simplefin.cs
+csc /t:library simplefin.cs
+notepad earlybindtest.cs 
+csc earlybindtest.cs /r:simplefin.dll
+earlybindtest.exe 500000
+earlybindtest.exe 500000 Finance.EducationLoan,simplefin
+csc earlybindtest.cs /r:simplefin.dll
+earlybindtest.exe 500000 Finance.EducationLoan,simplefin
+earlybindtest.exe 500000 Finance.HomeLoan,simplefin
+earlybindtest.exe 500000 Finance.BusinessLoan,simplefin
+copy earlybindtest.cs latebindtest.cs 
+notepad latebindtest.cs
+csc latebindtest.cs /r:simplefin.dll
+latebindtest.exe 500000 Finance.HomeLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.PersonalLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.PersonalLoan,simplefin GetInterestRateForEmployees
+latebindtest.exe 500000 Finance.BusinessLoan,simplefin RateOfInterest
+copy simplefin.cs attribfin.cs 
+notepad attribfin.cs
+csc /t:library attribfin.cs
+copy latebindtest.cs custattrtest.cs 
+notepad custattrtest.cs
+csc custattrtest.cs /r:attribfin.dll
+custattrtest.exe 500000 Finance.EducationLoan,attribfin GetInterestRate
+custattrtest.exe 500000 Finance.HomeLoan,attribfin GetInterestRate
+custattrtest.exe 500000 Finance.PersonalLoan,attribfin GetInterestRate
+csc /t:library attribfin.cs
+csc custattrtest.cs /r:attribfin.dll
+custattrtest.exe 500000 Finance.EducationLoan,attribfin GetInterestRate
+custattrtest.exe 500000 Finance.HomeLoan,attribfin GetInterestRate
+custattrtest.exe 500000 Finance.PersonalLoan,attribfin GetInterestRate
+custattrtest.exe 500000 Finance.PersonalLoan,attribfin GetInterestRateForEmployees
+csc /t:library attribfin.cs
+ildasm attribfin.dll
+objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+csc /t:library payroll.cs
+objaccesstest.exe
+ildasm objaccesstest.exe
+sn /T payroll.dll
+sn /T c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+gacutil /i payroll.dll
+notepad payroll.cs
+ildasm payroll.dll
+csc /t:library payroll.cs
+ildasm payroll.dll
+sn /k met.key
+csc /t:library /keyfile:met.key payroll.cs
+sn /T payroll.dll
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+ildasm objaccesstest.exe
+gacutil /i payroll.dll
+del payroll.dll
+objaccesstest.exe
+gacutil /u payroll
+objaccesstest.exe
+csc /t:library /keyfile:met.key payroll.cs
+objaccesstest.exe
+doskey /h >cmd-08-11-2017.txt

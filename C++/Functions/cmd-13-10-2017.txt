@@ -1,0 +1,196 @@
+    1  java -version
+    2  sudo rpm -iv ~/Shared/Install/jdk-8u121-linux-i586.rpm 
+    3  vi ~/.bashrc 
+    4  java -version
+    5  javac -version
+    6  node -v
+    7  cd Test
+    8  ll
+    9  cd RESTTest/
+   10  cd WEB-INF/classes/
+   11  vi survey/FeedbackDetail.java 
+   12  mv survey/FeedbackDetail.java survey/FeedbackInfo.java
+   13  vi survey/FeedbackInfo.java
+   14  echo CLASSPATH
+   15  echo $CLASSPATH
+   16  export CLASSPATH.:=~/glassfish4/glassfish/lib/javaee.jar 
+   17  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   18  rm survey/*.class
+   19  javac survey/FeedbackInfo.java 
+   20  vi survey/FeedbackInfo.java
+   21  javac survey/FeedbackInfo.java 
+   22  mv survey/FeedbackWS.java  survey/FeedbackService.java
+   23  vi survey/FeedbackService.java
+   24  javac survey/FeedbackService.java
+   25  vi survey/FeedbackService.java
+   26  javac survey/FeedbackService.java
+   27  vi survey/RESTfulApp.java 
+   28  javac survey/RESTfulApp.java 
+   29  cd ../..
+   30  ~/glassfish4/bin/asadmin start-domain
+   31  ~/glassfish4/bin/asadmin deploy .
+   32  cd WEB-INF/classes/
+   33  vi survey/FeedbackService.java 
+   34  javac survey/FeedbackService.java 
+   35  touch ../../.reload 
+   36  vi ../../client.html 
+   37  ~/glassfish4/bin/asadmin stop-domain
+   38  rm -r ~/glassfish4/
+   39  cd ~
+   40  unzip ~/Shared/Install/glassfish-4.1.zip 
+   41  cd /SoftDev/Test/
+   42  ll
+   43  cd RESTTest/
+   44  ~/glassfish4/bin/asadmin start-domain
+   45  ~/glassfish4/bin/asadmin deploy .
+   46  ~/glassfish4/bin/asadmin undeploy RESTTest
+   47  ls
+   48  cd www/html/
+   49  ls
+   50  ls scripts/
+   51  ls
+   52  cd ..
+   53  ls
+   54  ls
+   55  cd Test/
+   56  ls
+   57  exit
+   58  cd /usr/local/
+   59  ll
+   60  ll bin/
+   61  ll include/
+   62  ll sbin/
+   63  ll src
+   64  cd /tmp/
+   65  tar xvf ~/Shared/Install/node-v7.5.0-linux-x86.tar.xz 
+   66  cd node-v7.5.0-linux-x86/
+   67  ll
+   68  sudo mv * /usr/local/
+   69  sudo cp -r . /usr/local/
+   70  node -v
+   71  npm -v
+   72  rm -r /tmp/node-v7.5.0-linux-x86/
+   73  ll
+   74  cd Test
+   75  ll
+   76  cd jsrs/
+   77  ll
+   78  rm -r node_modules/
+   79  npm install express
+   80  vi server.js 
+   81  npm config set strict-ssl false
+   82  npm install express
+   83  npm install body-parser
+   84  ll
+   85  node server.js 
+   86  ll
+   87  clear
+   88  halt 
+   89  ll
+   90  ll
+   91  halt 
+   92  ll
+   93  java -version 
+   94  ll
+   95  cp -r ~/Shared/Foundations/ .
+   96  mkdir C++
+   97  cd C++/
+   98  mkdir Functions 
+   99  cd Functions/
+  100  vi nmspctest1.cpp
+  101  c++ -o nmspctest1 nmspctest1.cpp 
+  102  ll
+  103  ./nmspctest1 
+  104  echo $?
+  105  vi nmspctest1.cpp
+  106  ./nmspctest1 
+  107  echo $?
+  108  c++ -o nmspctest1 nmspctest1.cpp 
+  109  ./nmspctest1 
+  110  echo $?
+  111  vi nmspctest1.cpp
+  112  c++ -o nmspctest1 nmspctest1.cpp 
+  113  ./nmspctest1 
+  114  echo $?
+  115  vi nmspctest1.cpp
+  116  c++ -o nmspctest1 nmspctest1.cpp 
+  117  vi nmspctest1.cpp
+  118  c++ -o nmspctest1 nmspctest1.cpp 
+  119  ./nmspctest1 
+  120  echo $?
+  121  vi nmspctest1.cpp
+  122  vi people.h
+  123  vi nmspctest2.cpp 
+  124  c++ -o nmspctest2 nmspctest2.cpp
+  125  ./nmspctest2 
+  126  vi nmspctest2.cpp 
+  127  c++ -o nmspctest2 nmspctest2.cpp
+  128  ./nmspctest2 
+  129  echo $?
+  130  vi nmspctest2.cpp 
+  131  c++ -o nmspctest2 nmspctest2.cpp
+  132  ./nmspctest2 
+  133  echo $?
+  134  vi nmspctest2.cpp 
+  135  c++ -o nmspctest2 nmspctest2.cpp
+  136  vi nmspctest2.cpp 
+  137  c++ -o nmspctest2 nmspctest2.cpp
+  138  ./nmspctest2 
+  139  echo $?
+  140  vi nmspctest2.cpp 
+  141  vi nmspctest1.cpp
+  142  objdump -t nmspctest2
+  143  objdump -t nmspctest1
+  144  objdump -t nmspctest2
+  145  c++filt _ZN4Jack3ageE
+  146  c++filt _ZN6Mother8Daughter3ageE
+  147  c++filt _DN6Mother8Daughter3ageE
+  148  vi stdnmspctest.cpp
+  149  c++ -o stdnmspctest stdnmspctest.cpp 
+  150  ./stdnmspctest 
+  151  vi stdnmspctest.cpp
+  152  c++ -o stdnmspctest stdnmspctest.cpp 
+  153  ./stdnmspctest 
+  154  vi stdnmspctest.cpp
+  155  c++ -o stdnmspctest stdnmspctest.cpp 
+  156  ./stdnmspctest 
+  157  vi stdnmspctest.cpp
+  158  vi power.h
+  159  rm power.h 
+  160  vi power.cpp
+  161  c++ -c power.cpp 
+  162  vi functest.cpp
+  163  c++ -o functest functest.cpp 
+  164  vi functest.cpp
+  165  c++ -o functest functest.cpp 
+  166  c++ -o functest functest.cpp power.o 
+  167  vi functest.cpp
+  168  c++ -o functest functest.cpp 
+  169  c++ -o functest functest.cpp power.o 
+  170  ./functest 
+  171  vi functest.cpp
+  172  c++ -o functest functest.cpp power.o 
+  173  vi functest.cpp
+  174  c++ -o functest functest.cpp power.o 
+  175  vi functest.cpp
+  176  c++ -o functest functest.cpp power.o 
+  177  ./functest 
+  178  vi functest.cpp
+  179  objdump -t power.o 
+  180  vi power.cpp 
+  181  vi functest.cpp
+  182  c++filt _Z6Actionlfd
+  183  c++filt _Z6ActionlfPd
+  184  c++filt _ZN5Actor6ActionElfPd
+  185  cp ../../Foundations/Fundamentals/C/Basics/myfunc.o .
+  186  objdump -t myfunc.o 
+  187  vi ../../Foundations/Fundamentals/C/Basics/myfunc.c 
+  188  vi cfunctest.cpp
+  189  c++ -o cfunctest cfunctest.cpp myfunc.o 
+  190  vi cfunctest.cpp
+  191  c++ -o cfunctest cfunctest.cpp myfunc.o 
+  192  ./cfunctest 
+  193  vi cfunctest.cpp
+  194  man mmap
+  195  vi cfunctest.cpp
+  196  history > cmd-13-10-2017.txt

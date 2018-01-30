@@ -1,0 +1,92 @@
+    4  mkdir Distributed 
+    5  cd Distributed/
+    6  mkdir Basics 
+    7  cd Basics/
+    8  vi ServerSocketTest.java 
+    9  javac ServerSocketTest.java 
+   10  java ServerSocketTest &
+   11  java ServerSocketTest
+   12  netstat -noa
+   13  telnet localhost 4031
+   14  vi SocketTest.java 
+   15  javac SocketTest.java 
+   16  java SocketTest
+   17  ps 
+   18  kill 3016
+   19  vi ServerSocketTest.java 
+   20  javac ServerSocketTest.java 
+   21  java ServerSocketTest &
+   22  java SocketTest
+   23  ps
+   24  kill 3542
+   25  vi ServerSocketTest.java 
+   26  javac ServerSocketTest.java 
+   27  java ServerSocketTest &
+   28  java SocketTest
+   29  vi DatagramSocketTest.java 
+   30  javac DatagramSocketTest.java 
+   31  java DatagramSocketTest &
+   32  vi MulticastSocketTest.java 
+   33  javac MulticastSocketTest.java 
+   34  java MulticastSocketTest
+   35  vi DatagramSocketTest.java 
+   36  ps
+   37  vi MulticastSocketTest.java 
+   38  javac MulticastSocketTest.java 
+   39  java MulticastSocketTest
+   40  ps
+   41  kill 3625
+   42  kill 3833
+   43  cp ~/Shared/web/stock.php /SoftDev/www/html/
+   44  vi URLTest.java
+   45  javac URLTest.java
+   46  java URLTest
+   47  cd ..
+   48  mkdir RMITest
+   49  cd RMITest/
+   50  mkdir shopping
+   51  mv ~/Shared/Store.java shopping/
+   52  vi shopping/Store.java 
+   53  javac shopping/Store.java 
+   54  vi shopping/ItemInfo.java 
+   55  javac shopping/ItemInfo.java 
+   56  vi shopping/ShopKeeper.java
+   57  javac shopping/ShopKeeper.java
+   58  vi shopping/ShopKeeperImpl.java 
+   59  javac shopping/ShopKeeperImpl.java 
+   60  vi shopping/ShopKeeperImpl.java 
+   61  javac shopping/ShopKeeperImpl.java 
+   62  vi ServerApp.java 
+   63  javac ServerApp.java 
+   64  rmiregistry &
+   65  java ServerApp &
+   66  vi ClientApp.java 
+   67  javac ClientApp.java 
+   68  java ClientApp 
+   69  ps
+   70  kill 4665
+   71  kill 4649
+   72  cd ..
+   73  mkdir RMIStateTest
+   74  cd RMIStateTest/
+   75  mkdir shopping 
+   76  cp ../RMITest/shopping/Store.java shopping/
+   77  vi shopping/Cart.java 
+   78  javac shopping/Cart.java 
+   79  vi shopping/CartImpl.java 
+   80  javac shopping/CartImpl.java 
+   81  vi shopping/CartFactory.java 
+   82  javac shopping/CartFactory.java 
+   83  vi shopping/CartFactoryImpl.java 
+   84  javac shopping/CartFactoryImpl.java 
+   85  cp ../RMITest/ServerApp.java .
+   86  vi ServerApp.java 
+   87  javac ServerApp.java 
+   88  rmiregistry &
+   89  java ServerApp & 
+   90  vi ClientApp.java 
+   91  javac ClientApp.java 
+   92  java ClientApp rmi://localhost/cartFactory
+   93  ps
+   94  javap java.rmi.Naming
+   95  history >cmd-09-12-2017.txt

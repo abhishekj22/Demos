@@ -1,0 +1,26 @@
+    8  mkdir JWSTest
+    9  cd JWSTest/
+   10  mkdir shopping
+   11  cp ../RMITest/shopping/Store.java shopping/
+   12  javac shopping/Store.java 
+   13  vi shopping/OrderInfo.java 
+   14  javac shopping/OrderInfo.java 
+   15  vi shopping/CustomerWS.java
+   16  javac shopping/CustomerWS.java
+   17  vi ServerApp.java
+   18  javac ServerApp.java
+   19  java ServerApp &
+   20  wsimport -p shopping.client http://localhost:8031/shopping/customerws?wsdl
+   21  ll shopping/client/
+   22  javap shopping.client.CustomerSupport
+   23* javap shopping.client.Recei
+   24  javap shopping.client.CustomerService
+   25  vi ClientApp.java 
+   26  javac ClientApp.java 
+   27  vi ClientApp.java 
+   28  javac ClientApp.java 
+   29  java ClientApp
+   30  cp ServerApp.class ~/Shared/Testing/
+   31  mkdir ~/Shared/Testing/shopping
+   32  cp shopping/*.class ~/Shared/Testing/shopping/
+   33  history > cmd-11-12-2017.txt 

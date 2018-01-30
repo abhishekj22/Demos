@@ -1,0 +1,66 @@
+    8  cd MiddleTier/
+    9  ~/oracle/startxe 
+   10  java Server &
+   11  java ServerTest CU102 107 3
+   12  cd ..
+   13  mkdir PresentationTier
+   14  cd PresentationTier/
+   15  mkdir WEB-INF
+   16  mkdir WEB-INF/classes 
+   17  cp ~/Shared/web/web.xml .
+   18  mv web.xml WEB-INF/
+   19  vi WEB-INF/web.xml 
+   20  ~/glassfish4/bin/asadmin deploy .
+   21  cd WEB-INF/classes/
+   22  wsimport -p sales.client http://localhost:8032/sales/ordermanager?wsdl
+   23  vi OrderManagerRS.java 
+   24  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   25  javac -d . OrderManagerRS.java 
+   26  vi OrderManagerRS.java 
+   27  javac -d . OrderManagerRS.java 
+   28  touch ../../.reload
+   29  cp ~/Shared/web/clients/omclient.html ../../
+   30  cp ~/Shared/web/clients/jquery.js ../../
+   31  vi ../../omclient.html 
+   32  mv ../../omclient.html ../../index.html
+   33  cd ..
+   34  mkdir DBWebTest
+   35  cd DBWebTest/
+   36  mkdir WEB-INF
+   37  mkdir WEB-INF/classes 
+   38  cp ~/Shared/web/web.xml WEB-INF/
+   39  ~/glassfish4/bin/asadmin deploy .
+   40  ps 
+   41  kill 3665 
+   42  ps
+   43  kill 3074
+   44  ~/glassfish4/bin/asadmin start-domain
+   45  cd WEB-INF/classes/
+   46  vi ProductBean.java 
+   47  javac -d . ProductBean.java 
+   48  vi ../../product.jspx
+   49  touch ../../.reload
+   50  vi ProductBean.java 
+   51  vi CustomerBean.java
+   52  javac -d . CustomerBean.java
+   53  vi CustomerBean.java
+   54  javac -d . CustomerBean.java
+   55  vi CustomerBean.java
+   56  javac -d . CustomerBean.java
+   57  vi ProductBean.java 
+   58  vi AuthenticationServlet.java 
+   59  javac -d . AuthenticationServlet.java 
+   60  cp ../../product.jspx ../../customer.jspx
+   61  vi ../../customer.jspx 
+   62  touch ../../.reload 
+   63  mkdir ../../protected
+   64  cp ../../product.jspx ../../protected/order.jspx
+   65  vi ../../protected/order.jspx 
+   66  vi CustomerBean.java
+   67  vi ../../protected/order.jspx 
+   68  vi ProtectionFilter.java 
+   69  javac -d . ProtectionFilter.java 
+   70  vi ProtectionFilter.java 
+   71  javac -d . ProtectionFilter.java 
+   72  touch ../../.reload 
+   73  history >cmd-14-12-2017.txt

@@ -1,0 +1,47 @@
+    1  vi defargtest.cpp
+    2  c++ -o defargtest defargtest.cpp 
+    3  ./defargtest 
+    4  vi defargtest.cpp
+    5  cp defargtest.cpp funcovldtest.cpp 
+    6  vi funcovldtest.cpp 
+    7  c++ -o funcovldtest funcovldtest.cpp 
+    8  vi funcovldtest.cpp 
+    9  vi ~/.vimrc
+   10  vi funcovldtest.cpp 
+   11  c++ -o funcovldtest funcovldtest.cpp 
+   12  vi funcovldtest.cpp 
+   13  c++ -o funcovldtest funcovldtest.cpp 
+   14  ./funcovldtest 
+   15  vi funcovldtest.cpp 
+   16  vi reftypetest.cpp
+   17  vi ~/.vimrc
+   18  vi reftypetest.cpp
+   19  c++ -o reftypetest reftypetest.cpp 
+   20  ./reftypetest 
+   21  vi reftypetest.cpp
+   22  vi throwtest.cpp 
+   23  c++ -o throwtest throwtest.cpp 
+   24  vi throwtest.cpp 
+   25  c++ -o throwtest throwtest.cpp 
+   26  ./throwtest 
+   27  vi throwtest.cpp 
+   28  c++ -o throwtest throwtest.cpp 
+   29  ./throwtest 
+   30  vi throwtest.cpp 
+   31  c++ -o throwtest throwtest.cpp 
+   32  ./throwtest 
+   33  cp throwtest.cpp catchtest1.cpp 
+   34  vi catchtest1.cpp 
+   35  c++ -o catchtest1 catchtest1.cpp 
+   36  ./catchtest1 
+   37  vi catchtest1.cpp 
+   38  c++ -o catchtest1 catchtest1.cpp 
+   39  ./catchtest1 
+   40  vi catchtest1.cpp 
+   41  vi catchtest1.cpp cp throwtest.cpp catchtest2.cpp 
+   42  cp throwtest.cpp catchtest2.cpp 
+   43  vi catchtest2.cpp 
+   44  c++ -o catchtest2 catchtest2.cpp 
+   45  ./catchtest2 
+   46  vi catchtest2.cpp 
+   47  history > cmd-14-10-2017.txt

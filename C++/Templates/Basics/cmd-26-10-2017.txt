@@ -1,0 +1,91 @@
+    1  cd ..
+    2  mkdir Templates
+    3  cd Templates/
+    4  mkdir Basics
+    5  cd Basics/
+    6  vi functmplttest1.cpp 
+    7  c++ -o functmplttest1 functmplttest1.cpp 
+    8  ./functmplttest1 
+    9  vi functmplttest1.cpp 
+   10  c++ -o functmplttest1 functmplttest1.cpp 
+   11  vi functmplttest1.cpp 
+   12  c++ -o functmplttest1 functmplttest1.cpp 
+   13  ./functmplttest1 
+   14  vi functmplttest1.cpp 
+   15  c++ -o functmplttest1 functmplttest1.cpp 
+   16  ./functmplttest1 
+   17  vi functmplttest1.cpp 
+   18  objdump -t functmplttest1
+   19  vi functmplttest1.cpp 
+   20  c++ -o functmplttest1 functmplttest1.cpp 
+   21  ./functmplttest1 
+   22  vi functmplttest1.cpp 
+   23  c++ -o functmplttest1 functmplttest1.cpp 
+   24  vi functmplttest1.cpp 
+   25  vi functmplttest2.cpp 
+   26  c++ -o functmplttest2 functmplttest2.cpp
+   27  ./functmplttest2 
+   28  vi functmplttest2.cpp 
+   29  c++ -o functmplttest2 functmplttest2.cpp
+   30  ./functmplttest2 
+   31  vi functmplttest2.cpp 
+   32  c++ -o functmplttest2 functmplttest2.cpp
+   33  ./functmplttest2 
+   34  vi functmplttest2.cpp 
+   35  vi classtmplttest1.cpp 
+   36  c++ -o classtmplttest1 classtmplttest1.cpp 
+   37  ./classtmplttest1 
+   38  vi classtmplttest1.cpp 
+   39  vi ../../Classes/objcopytest.cpp 
+   40  vi classtmplttest1.cpp 
+   41  cp classtmplttest1.cpp classtmplttest2.cpp
+   42  vi classtmplttest2.cpp 
+   43  c++ -o classtmplttest2 classtmplttest2.cpp 
+   44  ./classtmplttest2 
+   45  vi classtmplttest2.cpp 
+   46  cp classtmplttest2.cpp classtmplttest3.cpp 
+   47  vi classtmplttest3.cpp 
+   48  c++ -o classtmplttest3 classtmplttest3.cpp 
+   49  ./classtmplttest3 
+   50  vi classtmplttest3.cpp 
+   51  c++ -o classtmplttest3 classtmplttest3.cpp 
+   52  ./classtmplttest3 
+   53  vi classtmplttest3.cpp 
+   54  c++ -o classtmplttest3 classtmplttest3.cpp 
+   55  ./classtmplttest3 
+   56  vi classtmplttest3.cpp
+   57  vi generic.h
+   58  vi genctnrtest.cpp
+   59  c++ -o genctnrtest genctnrtest.cpp 
+   60  vi genctnrtest.cpp
+   61  c++ -o genctnrtest genctnrtest.cpp 
+   62  ./genctnrtest 
+   63  vi genctnrtest.cpp
+   64  c++ -o genctnrtest genctnrtest.cpp 
+   65  ./genctnrtest 
+   66  vi genctnrtest.cpp
+   67  c++ -o genctnrtest genctnrtest.cpp 
+   68  ./genctnrtest 
+   69  vi genctnrtest.cpp
+   70  vi generic.h 
+   71  cp genctnrtest.cpp genittrtest.cpp 
+   72  vi genittrtest.cpp 
+   73  c++ -o genittrtest genittrtest.cpp 
+   74  ./genittrtest 
+   75  vi generic.h 
+   76  vi genittrtest.cpp 
+   77  vi generic.h 
+   78  vi genalgotest1.cpp 
+   79  c++ -o genalgotest1 genalgotest1.cpp 
+   80  ./genalgotest1 
+   81  vi genalgotest1.cpp 
+   82  c++ -o genalgotest1 genalgotest1.cpp 
+   83  ./genalgotest1 
+   84  vi genalgotest1.cpp 
+   85  cp genalgotest1.cpp genalgotest2.cpp
+   86  vi genalgotest2.cpp 
+   87  c++ -o genalgotest2 genalgotest2.cpp 
+   88  ./genalgotest2 
+   89  vi genalgotest2.cpp 
+   90  vi genalgotest1.cpp 
+   91  history > cmd-26-10-2017.txt

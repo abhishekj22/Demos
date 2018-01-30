@@ -1,0 +1,15 @@
+cd MS.NET\Applications\Desktop\
+subst s: .
+s: 
+cd Basics
+notepad wpfplaintest.cs 
+csc wpfplaintest.cs
+notepad wpf.rsp
+csc @wpf.rsp wpfplaintest.cs
+copy wpfplaintest.cs wpfdepobjtest.cs
+notepad wpfdepobjtest.cs
+csc @wpf.rsp wpfdepobjtest.cs
+copy wpfplaintest.cs wpfuielemtest.cs
+notepad wpfuielemtest.cs
+csc @wpf.rsp wpfuielemtest.cs
+doskey /h > cmd-15-11-2017.txt

@@ -1,0 +1,51 @@
+notepad hello1.il
+ilasm hello1.il
+hello1
+ilasm hello1.il
+hello1
+notepad hello2.cs 
+csc hello2.cs
+hello2
+csc hello2.cs
+hello2
+ildasm hello2.exe
+csc hello2.cs
+hello2
+ildasm hello2.exe
+csc hello2.cs
+notepad greeter.cs 
+csc greeter.cs
+csc /target:library greeter.cs
+dir
+notepad greetapp.vb 
+vbc greetapp.vb
+vbc greetapp.vb /reference:greeter.dll 
+greetapp.exe
+ildasm greeter.dll
+ildasm greetapp.exe
+csc /target:library greeter.cs
+vbc greetapp.vb /reference:greeter.dll 
+csc /target:library greeter.cs
+vbc greetapp.vb /reference:greeter.dll 
+md Basics
+cd Basics
+notepad paramarraytest.cs 
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+paramarraytest.exe
+notepad optparamtest.cs 
+csc optparamtest.cs
+optparamtest.exe 75000
+optparamtest.exe 
+csc optparamtest.cs
+optparamtest.exe 75000
+optparamtest.exe
+optparamtest.exe 5OOOO
+csc optparamtest.cs
+optparamtest.exe 75000
+optparamtest.exe
+optparamtest.exe 5OOOO
+doskey /h >cmd-31-10-2017.txt

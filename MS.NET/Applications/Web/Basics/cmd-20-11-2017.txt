@@ -1,0 +1,15 @@
+cd MS.NET\Applications\
+md Web
+cd Web
+subst s: .
+s: 
+md Basics 
+cd Basics
+md Bin
+start server
+notepad welcome.html
+notepad web.config
+cd Bin
+notepad basicwebapp.cs 
+csc /t:library basicwebapp.cs
+doskey /h > cmd-20-11-2017.txt 

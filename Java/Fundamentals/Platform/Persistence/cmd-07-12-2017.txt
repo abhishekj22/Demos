@@ -1,0 +1,92 @@
+    4  cd ..
+    5  mkdir Persistence 
+    6  cd Persistence/
+    7  vi FileIOTest1.java 
+    8  javac FileIOTest1.java 
+    9  java FileIOTest1 data1.txt data2.txt
+   10  cp FileIOTest1.java data1.txt 
+   11  vi data1.txt 
+   12  java FileIOTest1 data1.txt data2.txt
+   13  vi data2.txt 
+   14  java FileIOTest1 data2.txt data3.txt
+   15  vi data3.txt 
+   16  vi FileIOTest2.java 
+   17  javac FileIOTest2.java 
+   18  java FileIOTest2 data1.txt 
+   19  vi data1.txt 
+   20  java FileIOTest2 data1.txt 
+   21  vi data1.txt 
+   22  vi FileIOTest2.java 
+   23  cp FileIOTest2.java FileChannelTest.java 
+   24  vi FileChannelTest.java 
+   25  javac FileChannelTest.java 
+   26  vi data2.txt 
+   27  vi data1.txt 
+   28  java FileChannelTest data1.txt 
+   29  vi data1.txt 
+   30  java FileChannelTest data1.txt
+   31  vi data1.txt 
+   32  vi DataIOTest.java 
+   33  javac DataIOTest.java 
+   34  java DataIOTest 4999.95 20000 hdd
+   35  vi product.dat 
+   36  java DataIOTest 4999.95 20000 hdd
+   37  java DataIOTest
+   38  cp DataIOTest.java TextIOTest.java 
+   39  vi TextIOTest.java 
+   40  javac TextIOTest.java 
+   41  java TextIOTest 4999.95 20000 hdd
+   42  java TextIOTest 
+   43  vi product.txt 
+   44  ll product.*
+   45  javap java.io.Serializable
+   46  cp -r ~/Shared/hr serhr
+   47  vi serhr/Employee.java 
+   48  vi serhr/Department.java 
+   49  vi serhr/Employee.java 
+   50  javac -d . serhr/*.java 
+   51  vi ObjSerTest.java 
+   52  javac ObjSerTest.java 
+   53  java ObjSerTest Accounting
+   54  java ObjSerTest
+   55  vi dept.dat 
+   56  vi serhr/Employee.java 
+   57  javac -d . serhr/Employee.java 
+   58  java ObjSerTest Accounting
+   59  java ObjSerTest
+   60  javap java.io.Externalizable
+   61  cp -r serhr/ exthr
+   62  vi exthr/Employee.java 
+   63  javac -d . exthr/Employee.java 
+   64  java ObjSerTest Accounting
+   65  java ObjSerTest
+   66  vi dept.dat 
+   67  cp -r ~/Shared/hr xmlhr
+   68  vi xmlhr/Department.java 
+   69  javac -d . xmlhr/*.java
+   70  vi xmlhr/Department.java 
+   71  javac -d . xmlhr/*.java
+   72  cp ObjSerTest.java XmlBindTest.java 
+   73  vi XmlBindTest.java 
+   74  javap javax.xml.bind.JAXBContext
+   75  vi XmlBindTest.java 
+   76  javac XmlBindTest.java 
+   77  java XmlBindTest Accounting
+   78  java XmlBindTest
+   79  vi dept.xml 
+   80  vi XmlBindTest.java 
+   81  javac XmlBindTest.java 
+   82  java XmlBindTest Accounting
+   83  vi dept.xml 
+   84  ll dept.*
+   85  vi xmlhr/Employee.java 
+   86  javac -d . xmlhr/Employee.java 
+   87  java XmlBindTest Accounting
+   88  vi dept.xml 
+   89  java XmlBindTest
+   90  vi xmlhr/Employee.java 
+   91  javac -d . xmlhr/Employee.java 
+   92  java XmlBindTest Accounting
+   93  java XmlBindTest
+   94  vi dept.xml 
+   95  history >cmd-07-12-2017.txt

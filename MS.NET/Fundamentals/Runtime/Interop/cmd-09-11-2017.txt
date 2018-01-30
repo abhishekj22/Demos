@@ -1,0 +1,57 @@
+cd MS.NET\Fundamentals\Runtime
+subst s: .
+subst /d s:
+cd Reflection
+dir
+cd ..
+subst s: .
+cd Reflection
+s:
+cd Reflection
+dir
+cls
+notepad asmloadtest.cs 
+csc asmloadtest.cs
+asmloadtest.exe
+copy asmloadtest.cs appdomaintest.cs 
+notepad appdomaintest.cs
+csc appdomaintest.cs
+appdomaintest.exe
+dir *.exe
+csc appdomaintest.cs
+appdomaintest.exe
+notepad greeters.cs
+notepad dynamicobjtest.cs 
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe
+dynamicobjtest.exe Greeters.CasualGreeter
+dynamicobjtest.exe Greeters.FormalGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+dynamicobjtest.exe Greeters.CasualGreeter Jill
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+dynamicobjtest.exe Greeters.HouseGreeter
+dynamicobjtest.exe Greeters.HouseGreeter Jill
+cd ..
+md Interop
+cd Interop
+cd legacy
+dir
+cd x86
+setup.bat
+cd ..
+notepad legacy\include\box.h
+notepad ijwbox.cpp 
+cl /CLR /LD ijwbox.cpp legacy\x86\box.obj
+dir
+ildasm ijwbox.dll
+notepad mixasmtest.cs 
+csc mixasmtest.cs /r:ijwbox.dll
+mixasmtest.exe
+csc /platform:x86 mixasmtest.cs /r:ijwbox.dll
+mixasmtest.exe
+cl /CLR /LD ijwbox.cpp legacy\x86\box.obj
+doskey /h >cmd-09-11-2017.txt

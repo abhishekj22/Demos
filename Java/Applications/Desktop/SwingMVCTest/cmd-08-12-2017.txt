@@ -1,0 +1,141 @@
+    4  mkdir Applications 
+    5  cd Applications/
+    6  mkdir Desktop 
+    7  cd Desktop/
+    8  mkdir Basics
+    9  cd Basics/
+   10  vi AWTPlainTest.java 
+   11  javac AWTPlainTest.java 
+   12  java AWTPlainTest
+   13  vi AWTPlainTest.java 
+   14  javac AWTPlainTest.java 
+   15  vi AWTPlainTest.java 
+   16  javac AWTPlainTest.java 
+   17  java AWTPlainTest
+   18  cp AWTPlainTest.java AWTChildTest.java 
+   19  vi AWTChildTest.java 
+   20  javac AWTChildTest.java 
+   21  java AWTChildTest
+   22  vi AWTChildTest.java 
+   23  javac AWTChildTest.java 
+   24  java AWTChildTest
+   25  vi AWTChildTest.java 
+   26  javac AWTChildTest.java 
+   27  java AWTChildTest
+   28  vi AWTChildTest.java 
+   29  java AWTChildTest
+   30  javap java.awt.event.ActionListener
+   31  vi AWTChildTest.java 
+   32  javac AWTChildTest.java 
+   33  java AWTChildTest
+   34  vi AWTChildTest.java 
+   35  cp AWTPlainTest.java AWTPaintTest.java 
+   36  vi AWTPaintTest.java 
+   37  javap java.awt.Component
+   38  vi AWTPaintTest.java 
+   39  javac AWTPaintTest.java 
+   40  java AWTPaintTest
+   41  vi AWTPaintTest.java 
+   42  javac AWTPaintTest.java 
+   43  java AWTPaintTest
+   44  vi AWTPaintTest.java 
+   45  javac AWTPaintTest.java 
+   46  java AWTPaintTest
+   47  vi AWTPaintTest.java 
+   48  javac AWTPaintTest.java 
+   49  java AWTPaintTest
+   50  vi AWTPaintTest.java 
+   51  javac AWTPaintTest.java 
+   52  java AWTPaintTest
+   53  vi AWTPaintTest.java 
+   54  javac AWTPaintTest.java 
+   55  java AWTPaintTest
+   56  vi SwingPlainTest.java 
+   57  javac SwingPlainTest.java 
+   58  vi SwingPlainTest.java 
+   59  javac SwingPlainTest.java 
+   60  java SwingPlainTest
+   61  vi SwingPlainTest.java 
+   62  javac SwingPlainTest.java 
+   63  java SwingPlainTest
+   64  vi SwingPlainTest.java 
+   65  cp SwingPlainTest.java SwingChildTest.java 
+   66  vi SwingChildTest.java 
+   67  javac SwingChildTest.java 
+   68  vi SwingChildTest.java 
+   69  javac SwingChildTest.java 
+   70  java SwingChildTest
+   71  vi SwingChildTest.java 
+   72  javac SwingChildTest.java 
+   73  java SwingChildTest
+   74  vi SwingChildTest.java 
+   75  javac SwingChildTest.java 
+   76  java SwingChildTest
+   77  java -Dswing.defaultlaf=com.sun.java.swing.plaf.motif.MotifLookAndFeel SwingChildTest
+   78  java -Dswing.defaultlaf=javax.swing.plaf.nimbus.NimbusLookAndFeel SwingChildTest
+   79  cp SwingPlainTest.java SwingPaintTest.java 
+   80  vi SwingPaintTest.java 
+   81  javac SwingPaintTest.java 
+   82  cp SwingPaintTest*.class ~/Shared/Testing/
+   83  java SwingPaintTest
+   84  vi SwingPaintTest.java 
+   85  javac SwingPaintTest.java 
+   86  java SwingPaintTest
+   87  vi SwingPaintTest.java 
+   88  javac SwingPaintTest.java 
+   89  vi SwingPaintTest.java 
+   90  javac SwingPaintTest.java 
+   91  vi SwingPaintTest.java 
+   92  javac SwingPaintTest.java 
+   93  vi SwingPaintTest.java 
+   94  javac SwingPaintTest.java 
+   95  java SwingPaintTest
+   96  cp SwingPaintTest*.class ~/Shared/Testing/
+   97  java SwingPaintTest
+   98  vi SwingPaintTest.java 
+   99  javac SwingPaintTest.java 
+  100  vi SwingPaintTest.java 
+  101  javac SwingPaintTest.java 
+  102  java SwingPaintTest
+  103  vi SwingPaintTest.java 
+  104  javac SwingPaintTest.java 
+  105  java SwingPaintTest
+  106  vi SwingPaintTest.java 
+  107  javac SwingPaintTest.java 
+  108  java SwingPaintTest
+  109  vi SwingPaintTest.java 
+  110  javac SwingPaintTest.java
+  111  java SwingPaintTest
+  112  cd ..
+  113  mkdir SwingMVCTest
+  114  cp ~/Shared/Document.java SwingMVCTest/
+  115  cd SwingMVCTest/
+  116  vi Document.java 
+  117  javac -d . Document.java 
+  118  vi Visitor.java 
+  119  javac -d . Visitor.java 
+  120  vi VisitorModel.java 
+  121  vi Document.java 
+  122  javac -d . Document.java 
+  123  vi VisitorModel.java 
+  124  javac -d . VisitorModel.java 
+  125  vi VisitorView.java 
+  126  javac -d . VisitorView.java 
+  127  vi VisitorController.java 
+  128  javac -d . VisitorController.java 
+  129  java app.VisitorController
+  130  vi VisitorView.java 
+  131  javac -d . VisitorView.java 
+  132  java app.VisitorController
+  133  vi Visitor.java 
+  134  vi VisitorModel.java 
+  135  vi ~/Documents/visitors.xml 
+  136  vi VisitorModel.java 
+  137  vi VisitorView.java 
+  138  vi VisitorController.java 
+  139  vi app.mf
+  140  jar cfm app.jar app.mf app
+  141  java -jar app.jar 
+  142  cp app.jar ~/Shared/Testing/
+  143  java -jar app.jar 
+  144  history >cmd-08-12-2017.txt

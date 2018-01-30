@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:jsp="http://java.sun.com/JSP/Page">
+
+	<head>
+		<title>DBWebApp</title>
+	</head>
+	<body>
+		<h1>Welcome Customer</h1>
+		<form method="POST" action="login">
+			<p>
+				<b>Customer ID</b><br/>
+				<input type="text" name="customerId"/>
+			</p>
+			<p>
+				<b>Password</b><br/>
+				<input type="password" name="password"/>
+			</p>
+			<p>
+				<input type="submit" value="Login"/>
+			</p>
+		</form>
+		<p>
+			<b>${param.failed ? "Invalid Customer ID or Password" : "Authentication Required"}</b>
+		</p>
+	</body>
+</html>
+

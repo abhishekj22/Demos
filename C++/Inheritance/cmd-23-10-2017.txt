@@ -1,0 +1,83 @@
+    1  cp newdelobjtest.cpp newdelarrtest.cpp 
+    2  vi newdelarrtest.cpp 
+    3  c++ -o newdelarrtest newdelarrtest.cpp
+    4  ./newdelarrtest 
+    5  vi newdelarrtest.cpp 
+    6  c++ -o newdelarrtest newdelarrtest.cpp
+    7  ./newdelarrtest 
+    8  vi newdelarrtest.cpp 
+    9  c++ -o newdelarrtest newdelarrtest.cpp
+   10  ./newdelarrtest 
+   11  vi newdelarrtest.cpp 
+   12  c++ -o newdelarrtest newdelarrtest.cpp
+   13  vi newdelarrtest.cpp 
+   14  c++ -o newdelarrtest newdelarrtest.cpp
+   15  vi newdelarrtest.cpp 
+   16  c++ -o newdelarrtest newdelarrtest.cpp
+   17  ./newdelarrtest 
+   18  echo $?
+   19  ./newdelarrtest 
+   20  echo $?
+   21  vi newdelarrtest.cpp 
+   22  c++ -o newdelarrtest newdelarrtest.cpp
+   23  ./newdelarrtest 
+   24  vi newdelarrtest.cpp 
+   25  c++ -o newdelarrtest newdelarrtest.cpp
+   26  vi newdelarrtest.cpp 
+   27  c++ -o newdelarrtest newdelarrtest.cpp
+   28  ./newdelarrtest 
+   29  cp newdelobjtest.cpp objcasttest.cpp
+   30  vi objcasttest.cpp 
+   31  c++ -o objcasttest objcasttest.cpp 
+   32  vi objcasttest.cpp 
+   33  c++ -o objcasttest objcasttest.cpp 
+   34  vi objcasttest.cpp 
+   35  c++ -o objcasttest objcasttest.cpp 
+   36  ./objcasttest 
+   37  vi objcasttest.cpp 
+   38  c++ -o objcasttest objcasttest.cpp 
+   39  vi objcasttest.cpp 
+   40  c++ -o objcasttest objcasttest.cpp 
+   41  ./objcasttest 
+   42  vi objcasttest.cpp 
+   43  c++ -o objcasttest objcasttest.cpp 
+   44  vi objcasttest.cpp 
+   45  c++ -o objcasttest objcasttest.cpp 
+   46  ./objcasttest 
+   47  vi objcasttest.cpp 
+   48  c++ -o objcasttest objcasttest.cpp 
+   49  vi objcasttest.cpp 
+   50  c++ -o objcasttest objcasttest.cpp 
+   51  vi objcasttest.cpp 
+   52  c++ -o objcasttest objcasttest.cpp 
+   53  vi objcasttest.cpp 
+   54  c++ -o objcasttest objcasttest.cpp 
+   55  ./objcasttest 
+   56  vi objcasttest.cpp 
+   57  cd ..
+   58  mkdir Inheritance
+   59  cd Inheritance/
+   60  vi payroll1.h
+   61  vi drvdclasstest.cpp 
+   62  c++ -o drvdclasstest drvdclasstest.cpp 
+   63  ./drvdclasstest 
+   64  vi drvdclasstest.cpp 
+   65  c++ -o drvdclasstest drvdclasstest.cpp 
+   66  ./drvdclasstest 
+   67  vi drvdclasstest.cpp 
+   68  c++ -o drvdclasstest drvdclasstest.cpp 
+   69  vi drvdclasstest.cpp 
+   70  c++ -o drvdclasstest drvdclasstest.cpp 
+   71  ./drvdclasstest 
+   72  vi drvdclasstest.cpp 
+   73  cp payroll1.h payroll2.h 
+   74  vi payroll2.h 
+   75  cp drvdclasstest.cpp virtfunctest.cpp 
+   76  vi virtfunctest.cpp 
+   77  c++ -o virtfunctest virtfunctest.cpp
+   78  ./virtfunctest 
+   79  vi virtfunctest.cpp 
+   80  vi payroll2.h 
+   81  vi virtfunctest.cpp 
+   82  vi payroll2.h 
+   83  history > cmd-23-10-2017.txt

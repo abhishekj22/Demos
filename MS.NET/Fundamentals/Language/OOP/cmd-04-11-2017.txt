@@ -1,0 +1,56 @@
+cd MS.NET\Fundamentals\Language
+subst s: . 
+s: 
+dir
+cd OOP
+dir
+cls
+dir
+cls
+notepad gctest.cs 
+csc gctest.cs
+gctest.exe
+csc /d:TESTING gctest.cs 
+gctest.exe
+csc /d:TESTING gctest.cs 
+gctest.exe
+ildasm gctest.exe
+ildasm banking2.dll
+csc /d:TESTING gctest.cs 
+gctest.exe
+csc /d:TESTING gctest.cs 
+gctest.exe 4
+gctest.exe four
+csc /d:TESTING gctest.cs 
+gctest.exe 4
+gctest.exe four
+csc /d:TESTING gctest.cs 
+gctest.exe 4
+gctest.exe four
+notepad delegatetest1.cs 
+csc delegatetest1.cs
+delegatetest1.exe
+ildasm delegatetest1.exe
+csc delegatetest1.cs
+delegatetest1.exe
+csc delegatetest1.cs
+delegatetest1.exe
+copy delegatetest1.cs delegatetest2.cs
+notepad delegatetest2.cs
+csc delegatetest2.cs
+delegatetest2.exe
+csc delegatetest2.cs
+delegatetest2.exe
+ildasm delegatetest2.exe
+notepad eventtest.cs 
+csc eventtest.cs
+ildasm eventtest.exe
+csc eventtest.cs
+eventtest.exe
+csc eventtest.cs
+eventtest.exe
+csc eventtest.cs
+eventtest.exe
+csc eventtest.cs
+eventtest.exe
+doskey /h > cmd-04-11-2017.txt

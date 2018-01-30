@@ -1,0 +1,66 @@
+cd ..
+cd MS.NET\Fundamentals\Platform\
+dir 
+subst s: . 
+s: 
+cls
+cd Persistence
+dir 
+cls
+copy z:\Shared\hr.cs xmlserhr.cs
+notepad xmlserhr.cs
+csc /t:library xmlserhr.cs
+copy objsertest1.cs xmlsertest.cs
+notepad xmlsertest.cs
+csc xmlsertest.cs /r:xmlserhr.dll
+xmlsertest.exe Finance
+xmlsertest.exe
+dir dept.*
+notepad dept.xml
+csc /t:library xmlserhr.cs
+csc xmlsertest.cs /r:xmlserhr.dll
+xmlsertest.exe Finance
+notepad dept.xml
+xmlsertest.exe 
+csc xmlsertest.cs /r:xmlserhr.dll
+xmlsertest.exe Finance
+xmlsertest.exe 
+csc /t:library xmlserhr.cs
+xmlsertest.exe Finance
+xmlsertest.exe 
+notepad dept.xml
+notepad linqtoxmltest.cs
+csc linqtoxmltest.cs
+linqtoxmltest.exe
+linqtoxmltest.exe 3
+cd ..
+e:
+subst /d s: 
+cd ..
+md Applications 
+cd Applications
+md Desktop
+cd Desktop
+subst s: .
+s: 
+md Basics
+cd Basics
+notepad winplaintest.cs
+csc winplaintest.cs
+winplaintest.exe
+start .
+dumpbin /headers c:\Windows\System32\notepad.exe
+dumpbin /headers winplaintest.exe
+csc /t:winexe winplaintest.cs
+dumpbin /headers winplaintest.exe
+csc /t:winexe winplaintest.cs
+copy winplaintest.cs winpainttest.cs
+notepad winpainttest.cs
+csc /t:winexe winpainttest.cs
+copy winplaintest.cs winchildtest.cs
+notepad winchildtest.cs
+csc /t:winexe winchildtest.cs
+copy e:\MS.NET\Fundamentals\Platform\Concurrency\worker.cs
+notepad e:\MS.NET\Fundamentals\Platform\Concurrency\tasktest2.cs
+csc /t:winexe winchildtest.cs worker.cs
+doskey /h > cmd-14-11-2017.txt

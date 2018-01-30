@@ -1,0 +1,97 @@
+    2  cd ..
+    3  mkdir JNI 
+    4  cd JNI/
+    5  vi NativeMethodTest.java 
+    6  javac NativeMethodTest.java 
+    7  java NativeMethodTest 24 36
+    8  vi NativeMethodTest.java 
+    9  javac NativeMethodTest.java 
+   10  java NativeMethodTest 24 36
+   11  vi nmt.c 
+   12  export CPATH=/usr/java/jdk1.8.0_121/include/:/usr/java/jdk1.8.0_121/include/linux/
+   13  cc -shared -fPIC -o libnmt.so nmt.c 
+   14  java NativeMethodTest 24 36
+   15  java -Djava.library.path=. NativeMethodTest 24 36
+   16  export LD_LIBRARY_PATH=.
+   17  java NativeMethodTest 24 36
+   18  vi NativeMethodTest.java 
+   19  vi nmt.c 
+   20  vi StringAccessTest.java 
+   21  javac StringAccessTest.java 
+   22  javah StringHelper
+   23  vi StringHelper.h 
+   24  vi strh.cpp 
+   25  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   26  java StringAccessTest monday
+   27  java StringAccessTest tuesday
+   28  vi StringAccessTest.java 
+   29  javac StringAccessTest.java 
+   30  java StringAccessTest monday
+   31  vi StringAccessTest.java 
+   32  javac StringAccessTest.java 
+   33  java StringAccessTest monday
+   34  javah StringHelper
+   35  vi StringHelper.h 
+   36  vi strh.cpp 
+   37  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   38  java StringAccessTest monday
+   39  vi ArrayAccessTest.java 
+   40  javac -h . ArrayAccessTest.java 
+   41  vi ArrayHelper.h 
+   42  vi arrh.cpp 
+   43  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   44  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   45  vi ArrayAccessTest.java 
+   46  javac -h . ArrayAccessTest.java 
+   47  vi ArrayHelper.h 
+   48  vi arrh.cpp 
+   49  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   50  vi arrh.cpp 
+   51  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   52  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   53  java ArrayAccessTest 1 2 3 
+   54  mv ~/Shared/box4c.o .
+   55  vi ObjectAccessTest.java 
+   56  javac -h . ObjectAccessTest.java 
+   57  vi LegacyBox.h 
+   58  vi lbox.cpp
+   59  javap -p -s LegacyBox
+   60  vi lbox.cpp
+   61  c++ -shared -fPIC -o liblbox.so lbox.cpp box4c.o 
+   62  java ObjectAccessTest 12 8 7 1
+   63*  ObjectAccessTest.java 
+   64  javac -h . ObjectAccessTest.java 
+   65  javap -p -s LegacyBox
+   66  vi lbox.cpp
+   67  c++ -shared -fPIC -o liblbox.so lbox.cpp box4c.o 
+   68  java ObjectAccessTest 12 8 7 1
+   69  java ObjectAccessTest 12 8 7 4
+   70  vi ObjectAccessTest.java 
+   71  javac -h . ObjectAccessTest.java 
+   72  java ObjectAccessTest 12 8 7 1
+   73  java ObjectAccessTest 12 8 7 4
+   74  cd ..
+   75  mkdir Platform
+   76  cd Platform/
+   77  mkdir Concurrency
+   78  cd Concurrency/
+   79  cp ~/Shared/threads/Worker.java .
+   80  vi Worker.java 
+   81  javac Worker.java 
+   82  vi ThreadTest.java 
+   83  javac ThreadTest.java 
+   84  java ThreadTest
+   85  java ThreadTest 60
+   86  vi ThreadTest.java 
+   87  javac ThreadTest.java 
+   88  java ThreadTest
+   89  java ThreadTest 60
+   90  vi ThreadTest.java 
+   91  javac ThreadTest.java 
+   92  java ThreadTest
+   93  java ThreadTest 60
+   94  java ThreadTest 80
+   95  vi ThreadTest.java 
+   96  ll /usr/java/jdk1.8.0_121/jre/lib/rt.jar 
+   97  jar tf /usr/java/jdk1.8.0_121/jre/lib/rt.jar 
+   98  history > cmd-04-12-2017.txt

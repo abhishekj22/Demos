@@ -1,0 +1,72 @@
+cd MS.NET\Fundamentals\
+cls
+dir
+cls
+md Platform
+cd Platform
+subst s: .
+s: 
+cls
+dir
+cls
+md Concurrency
+cd Concurrency
+cls
+copy z:\Shared\threads\worker.cs
+notepad worker.cs
+notepad threadtest.cs 
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 60
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 60
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 60
+threadtest.exe 80
+copy z:\Shared\threads\threadsynctest.cs
+notepad threadsynctest.cs
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+copy z:\Shared\threads\threadcoordtest.cs
+notepad threadcoordtest.cs
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+copy z:\Shared\threads\threadlocaltest.cs
+notepad threadlocaltest.cs
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+copy z:\Shared\threads\tasktest1.cs
+notepad tasktest1.cs
+csc tasktest1.cs worker.cs
+tasktest1.exe
+csc tasktest1.cs worker.cs
+tasktest1.exe
+copy z:\Shared\threads\tasktest2.cs
+notepad tasktest2.cs
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+doskey /h > cmd-11-11-2017.txt

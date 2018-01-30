@@ -1,0 +1,12 @@
+cd MS.NET\Applications
+md Database
+cd Database
+subst s: .
+s:
+md Basics
+cd Basics
+notepad dbquerytest.cs 
+csc dbquerytest.cs
+notepad dbquerytest.exe.config
+dbquerytest.exe
+doskey /h >cmd-22-11-2017.txt

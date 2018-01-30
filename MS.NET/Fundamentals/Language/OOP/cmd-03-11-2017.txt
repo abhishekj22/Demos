@@ -1,0 +1,35 @@
+cd MS.NET\Fundamentals\Language
+SUBST s: .
+s:
+cd oop
+dir
+notepad banking1.cs
+csc /t:library banking1.cs
+notepad abstractclasstest.cs
+csc abstractclasstest.cs /r:banking1.dll
+abstractclasstest.exe 4000
+csc abstractclasstest.cs /r:banking1.dll
+abstractclasstest.exe 4000
+abstractclasstest.exe 14000
+abstractclasstest.exe 16000
+abstractclasstest.exe
+copy banking1.cs banking2.cs
+notepad banking2.cs
+csc /t:library banking2.cs
+np interfacetest1.cs
+doskey np=notepad $*
+np interfacetest1.cs
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+np interfacetest2.cs
+csc interfacetest2.cs
+csc interfacetest2.cs /r:payroll2.dll
+interfacetest2.exe
+csc interfacetest2.cs /r:payroll2.dll
+interfacetest2.exe
+csc interfacetest2.cs /r:payroll2.dll
+doskey /h >cmd-03-11-2017.txt

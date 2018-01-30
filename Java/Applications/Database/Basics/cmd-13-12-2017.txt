@@ -1,0 +1,117 @@
+    6  ~/glassfish4/bin/asadmin start-domain
+    7  mkdir RESTTest
+    8  cd RESTTest/
+    9  mkdir WEB-INF
+   10  mkdir WEB-INF/classes 
+   11  cp ~/Shared/web/web.xml WEB-INF/
+   12  ~/glassfish4/bin/asadmin deploy .
+   13  cd WEB-INF/classes/
+   14  cp ../../../JSFTest/WEB-INF/classes/Document.java .
+   15  javac -d . Document.java 
+   16  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   17  vi RESTfullApp.java 
+   18  javac -d . RESTfullApp.java 
+   19  vi Feedback.java 
+   20  javac -d . Feedback.java 
+   21  vi FeedbackRS.java 
+   22  javac -d . FeedbackRS.java 
+   23  vi FeedbackRS.java 
+   24  javac -d . FeedbackRS.java 
+   25  touch ../../.reload
+   26  cp ~/Shared/web/clients/view.html ../../
+   27  cp ~/Shared/web/clients/submit.html ../../
+   28  cp ~/Shared/web/clients/angular.js ../../
+   29  vi ../../submit.html 
+   30  vi ../../view.html 
+   31  cd ..
+   32  ~/glassfish4/bin/asadmin stop-domain
+   33  mkdir Database
+   34  cd Database/
+   35  mkdir Basics 
+   36  cd Basics/
+   37  ~/Shared/db/fixmysql 
+   38  ~/oracle/startxe 
+   39  ll /usr/java/jdk1.8.0_121/jre/lib/ext/
+   40  sudo ~/Shared/install/*.jar /usr/java/jdk1.8.0_121/jre/lib/ext/
+   41  sudo cp ~/Shared/install/*.jar /usr/java/jdk1.8.0_121/jre/lib/ext/
+   42  ll /usr/java/jdk1.8.0_121/jre/lib/ext/
+   43  vi db.properties
+   44  vi DBQueryTest.java 
+   45  javac DBQueryTest.java 
+   46  java DBQueryTest
+   47  vi db.properties
+   48  java DBQueryTest
+   49  vi db.properties
+   50  vi DBQueryTest.java 
+   51  javac DBQueryTest.java 
+   52  java DBQueryTest
+   53  vi db.properties
+   54  java DBQueryTest
+   55  vi DBQueryTest.java 
+   56* vi UpdateTest.java
+   57  javac UpdateTest.java 
+   58  java DBQueryTest
+   59  java UpdateTest 102
+   60  java DBQueryTest
+   61  java UpdateTest
+   62  java DBQueryTest
+   63  cp UpdateTest.java ParamSQLTest.java 
+   64  vi ParamSQLTest.java 
+   65  javac ParamSQLTest.java 
+   66  java ParamSQLTest CU103 101 6
+   67  java ParamSQLTest CU102 106 5
+   68  java ParamSQLTest CU102 104 5
+   69  vi ~/Shared/db/salesora.sql 
+   70  cp ParamSQLTest.java StorProcTest.java 
+   71  vi StorProcTest.java 
+   72  javac StorProcTest.java 
+   73  java StorProcTest CU102 103 11
+   74  java StorProcTest CU105 105 15
+   75  java StorProcTest CU104 105 15
+   76  cd ..
+   77  mkdir NTierTest
+   78  cd NTierTest/
+   79  mkdir MiddleTier
+   80  cd MiddleTier/
+   81  mkdir sales
+   82  vi sales/OrderManager.java 
+   83  javac sales/OrderManager.java 
+   84  vi Server.java 
+   85  javac Server.java 
+   86  vi Server.java 
+   87  javac Server.java 
+   88  java Server &
+   89  wsimport -p sales.client http://localhost:8032/sales/ordermanager?wsdl
+   90  vi Server.java 
+   91  ps
+   92  kill 5342
+   93  vi server.log 
+   94  unset CLASSPATH
+   95  java Server &
+   96  wsimport -p sales.client http://localhost:8032/sales/ordermanager?wsdl
+   97  vi ServerTest.java 
+   98  javac ServerTest.java 
+   99  java ServerTest CU101 101 4
+  100  ps
+  101  kill java
+  102  kill 5458
+  103  vi server.log 
+  104  java ServerTest CU101 109 4
+  105  vi server.log 
+  106  java Server &
+  107  java ServerTest CU101 109 4
+  108  vi server.log 
+  109  ps
+  110  kill 5659
+  111  vi ../../Basics/ParamSQLTest.java 
+  112  vi Server.java 
+  113  vi ServerTest.java 
+  114  javac ServerTest.java 
+  115  vi ServerTest.java 
+  116  javac ServerTest.java 
+  117  javap ServerTest
+  118  vi ServerTest.java 
+  119  javac ServerTest.java 
+  120  javap ServerTest
+  121  java ServerTest CU101 109 4
+  122  history >cmd-13-12-2017.txt

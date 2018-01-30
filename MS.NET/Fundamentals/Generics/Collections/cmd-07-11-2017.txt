@@ -1,0 +1,90 @@
+subst s: . 
+s: 
+dir
+subst /d s: 
+dir
+e: 
+cls
+cd MS.NET\Fundamentals\Generics
+dir 
+cd Basics
+dir 
+subst /d s:
+cd ..
+subst s: . 
+s: 
+dir 
+cd Basics
+dir 
+cls
+dir
+cls
+copy genclasstest.cs iterationtest.cs 
+notepad iterationtest.cs
+csc iterationtest.cs
+csc iterationtest.cs interval.cs
+iterationtest.exe
+csc iterationtest.cs interval.cs
+iterationtest.exe
+ildasm iterationtest.exe 
+cd ..
+md Collections 
+cd Collections
+copy ..\Basics\interval.cs
+notepad listtest.cs 
+csc listtest.cs
+csc listtest.cs interval.cs
+listtest.exe
+copy listtest.cs settest1.cs 
+notepad settest1.cs
+csc settest1.cs interval.cs
+settest1.exe 
+copy settest1.cs settest2.cs
+notepad settest2.cs
+csc settest2.cs interval.cs
+settest2.exe 
+notepad interval.cs
+csc settest2.cs interval.cs
+settest2.exe 
+csc settest2.cs interval.cs
+settest2.exe 
+csc settest2.cs interval.cs
+settest2.exe 
+copy listtest.cs dicttest1.cs 
+notepad dicttest1.cs
+csc dicttest1.cs interval.cs
+dicttest1.exe
+csc dicttest1.cs interval.cs
+dicttest1.exe
+csc dicttest1.cs interval.cs
+dicttest1.exe
+copy dicttest1.cs dicttest2.cs
+notepad dicttest2.cs
+csc dicttest2.cs interval.cs
+dicttest2.exe
+csc dicttest2.cs interval.cs
+dicttest2.exe
+copy dicttest2.cs dicttest3.cs
+notepad dicttest3.cs
+csc dicttest3.cs interval.cs
+dicttest3.exe
+csc dicttest3.cs interval.cs
+dicttest3.exe
+notepad linqtest.cs 
+notepad linqtest1.cs 
+csc linqtest1.cs
+linqtest1.exe
+csc linqtest1.cs
+linqtest1.exe
+notepad linqtest2.cs
+csc linqtest2.cs interval.cs
+linqtest2.exe
+linqtest2.exe 200
+linqtest2.exe 300
+csc linqtest2.cs interval.cs
+linqtest2.exe
+linqtest2.exe 300
+linqtest2.exe 350
+notepad linqtest2.cs
+csc linqtest2.cs interval.cs
+doskey /h >cmd-07-11-2017.txt

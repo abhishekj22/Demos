@@ -1,0 +1,98 @@
+    1  ll
+    2  cd C++/
+    3  ll
+    4  cd Functions/
+    5  ll
+    6  cd ..
+    7  mkdir Classes
+    8  cd Classes/
+    9  vi classtest1.cpp
+   10  c++ -o classtest1 classtest1.cpp 
+   11  vi classtest1.cpp
+   12  c++ -o classtest1 classtest1.cpp 
+   13  ./classtest1 
+   14  vi classtest1.cpp
+   15  c++ -o classtest1 classtest1.cpp 
+   16  ./classtest1 
+   17  vi classtest1.cpp
+   18  objdump -t classtest1
+   19  vi classtest1.cpp
+   20  c++ -o classtest1 classtest1.cpp 
+   21  ./classtest1 
+   22  vi classtest1.cpp
+   23  cp classtest1.cpp classtest2.cpp 
+   24  vi classtest2.cpp 
+   25  c++ -o classtest2 classtest2.cpp 
+   26  ./classtest2 
+   27  vi classtest2.cpp 
+   28  cp classtest2.cpp ctortest.cpp 
+   29  vi ctortest.cpp 
+   30  c++ -o ctortest ctortest.cpp 
+   31  ./ctortest 
+   32  vi ctortest.cpp 
+   33  c++ -o ctortest ctortest.cpp 
+   34  ./ctortest 
+   35  vi ctortest.cpp 
+   36  c++ -o ctortest ctortest.cpp 
+   37  ./ctortest 
+   38  vi ctortest.cpp 
+   39  c++ -o ctortest ctortest.cpp 
+   40  ./ctortest 
+   41  vi ctortest.cpp 
+   42  c++ -o ctortest ctortest.cpp 
+   43  ./ctortest 
+   44  vi ctortest.cpp 
+   45  c++ -o ctortest ctortest.cpp 
+   46  vi ctortest.cpp 
+   47  c++ -o ctortest ctortest.cpp 
+   48* 
+   49  c++ -o ctortest ctortest.cpp 
+   50  vi ctortest.cpp 
+   51  cp ctortest.cpp dtortest.cpp 
+   52  vi dtortest.cpp 
+   53  c++ -o dtortest dtortest.cpp 
+   54  ./dtortest 
+   55  vi dtortest.cpp 
+   56  c++ -o dtortest dtortest.cpp 
+   57  ./dtortest 
+   58  vi dtortest.cpp 
+   59  c++ -o dtortest dtortest.cpp 
+   60  ./dtortest 
+   61  vi dtortest.cpp 
+   62  c++ -o dtortest dtortest.cpp 
+   63  ./dtortest 
+   64  vi dtortest.cpp 
+   65  c++ -o dtortest dtortest.cpp 
+   66  ./dtortest 
+   67  vi dtortest.cpp 
+   68  c++ -o dtortest dtortest.cpp 
+   69  ./dtortest 
+   70  vi dtortest.cpp 
+   71  c++ -o dtortest dtortest.cpp 
+   72  vi dtortest.cpp 
+   73  c++ -o dtortest dtortest.cpp 
+   74  vi dtortest.cpp 
+   75  c++ -o dtortest dtortest.cpp 
+   76  ./dtortest 
+   77  vi dtortest.cpp 
+   78  c++ -o dtortest dtortest.cpp 
+   79  vi dtortest.cpp 
+   80  c++ -o dtortest dtortest.cpp 
+   81  ./dtortest 
+   82  vi dtortest.cpp 
+   83  cp dtortest.cpp objreftest.cpp 
+   84  vi objreftest.cpp 
+   85  c++ -o objreftest objreftest.cpp 
+   86  ./objreftest 
+   87  vi objreftest.cpp 
+   88  c++ -o objreftest objreftest.cpp 
+   89  ./objreftest 
+   90  vi objreftest.cpp 
+   91  c++ -o objreftest objreftest.cpp
+   92  vi objreftest.cpp 
+   93  c++ -o objreftest objreftest.cpp
+   94  ./objreftest 
+   95  vi objreftest.cpp 
+   96  c++ -o objreftest objreftest.cpp
+   97  vi objreftest.cpp 
+   98  history > cmd-17-10-2017.txt 

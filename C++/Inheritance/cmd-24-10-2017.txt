@@ -1,0 +1,70 @@
+    1  vi virtfunctest.cpp 
+    2  c++ -o virtfunctest virtfunctest.cpp 
+    3  ./virtfunctest 
+    4  vi virtfunctest.cpp 
+    5  c++ -o virtfunctest virtfunctest.cpp 
+    6  ./virtfunctest 
+    7  vi virtfunctest.cpp 
+    8  cp virtfunctest.cpp virtdtortest.cpp 
+    9  vi virtdtortest.cpp 
+   10  c++ -o virtdtortest virtdtortest.cpp 
+   11  vi virtdtortest.cpp 
+   12  c++ -o virtdtortest virtdtortest.cpp 
+   13  vi virtdtortest.cpp 
+   14  c++ -o virtdtortest virtdtortest.cpp 
+   15  ./virtdtortest 
+   16  vi virtdtortest.cpp 
+   17  vi payroll2.h 
+   18  c++ -o virtdtortest virtdtortest.cpp 
+   19  ./virtdtortest 
+   20  vi payroll2.h 
+   21  vi virtdtortest.cpp 
+   22  c++ -o virtdtortest virtdtortest.cpp 
+   23  ./virtdtortest 
+   24  vi virtdtortest.cpp
+   25  cp virtdtortest.cpp rttitest1.cpp 
+   26  vi rttitest1.cpp 
+   27  c++ -o rttitest1 rttitest1.cpp 
+   28  vi rttitest1.cpp 
+   29  c++ -o rttitest1 rttitest1.cpp 
+   30  vi rttitest1.cpp 
+   31  c++ -o rttitest1 rttitest1.cpp 
+   32  ./rttitest1 
+   33  vi rttitest1.cpp 
+   34  c++ -o rttitest1 rttitest1.cpp 
+   35  ./rttitest1 
+   36  vi rttitest1.cpp 
+   37  c++ -o rttitest1 rttitest1.cpp 
+   38  ./rttitest1 
+   39  vi rttitest1.cpp 
+   40  cp rttitest1.cpp rttitest2.cpp 
+   41  vi rttitest2.cpp 
+   42  c++ -o rttitest2 rttitest2.cpp 
+   43  ./rttitest2 
+   44  vi rttitest2.cpp 
+   45  c++ -o rttitest2 rttitest2.cpp 
+   46  ./rttitest2 
+   47  vi rttitest2.cpp 
+   48  c++ -o rttitest2 rttitest2.cpp 
+   49  ./rttitest2 
+   50  vi rttitest2.cpp 
+   51  vi banking1.h
+   52  vi banking1.cpp  
+   53  vi banking1.h
+   54  vi banking1.cpp  
+   55  c++ -c banking1.cpp 
+   56  vi banking1.h
+   57  c++ -c banking1.cpp 
+   58  vi adttest1.cpp 
+   59  c++ -o adttest1 adttest1.cpp banking1.o 
+   60  ./adttest1 
+   61  vi adttest1.cpp 
+   62  c++ -o adttest1 adttest1.cpp banking1.o 
+   63* 
+   64  vi adttest1.cpp 
+   65  vi banking1.cpp 
+   66  vi banking1.h
+   67  vi banking1.cpp 
+   68  vi banking1.h
+   69  ll
+   70  history > cmd-24-10-2017.txt 

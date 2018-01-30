@@ -1,0 +1,94 @@
+    1  ll
+    2  cp objreftest.cpp opovldtest1.cpp
+    3  vi opovldtest1.cpp 
+    4  c++ -o opovldtest1 opovldtest1.cpp 
+    5  vi opovldtest1.cpp 
+    6  c++ -o opovldtest1 opovldtest1.cpp 
+    7  ./opovldtest1 
+    8  vi opovldtest1.cpp 
+    9  c++ -o opovldtest1 opovldtest1.cpp 
+   10  ./opovldtest1 
+   11  vi opovldtest1.cpp 
+   12  c++ -o opovldtest1 opovldtest1.cpp 
+   13  vi opovldtest1.cpp 
+   14  c++ -o opovldtest1 opovldtest1.cpp 
+   15  ./opovldtest1 
+   16  vi opovldtest1.cpp 
+   17  c++ -o opovldtest1 opovldtest1.cpp 
+   18  vi opovldtest1.cpp 
+   19  c++ -o opovldtest1 opovldtest1.cpp 
+   20  vi opovldtest1.cpp 
+   21  c++ -o opovldtest1 opovldtest1.cpp 
+   22  ./opovldtest1 
+   23  vi opovldtest1.cpp 
+   24  c++ -o opovldtest1 opovldtest1.cpp 
+   25  vi opovldtest1.cpp 
+   26  c++ -o opovldtest1 opovldtest1.cpp 
+   27  ./opovldtest1 
+   28  vi opovldtest1.cpp 
+   29  c++ -o opovldtest1 opovldtest1.cpp
+   30  ./opovldtest1 
+   31  vi opovldtest1.cpp 
+   32  c++ -o opovldtest1 opovldtest1.cpp
+   33  vi opovldtest1.cpp 
+   34  c++ -o opovldtest1 opovldtest1.cpp
+   35  vi opovldtest1.cpp 
+   36  c++ -o opovldtest1 opovldtest1.cpp
+   37  ./opovldtest1 
+   38  vi opovldtest1.cpp 
+   39  cp opovldtest1.cpp opovldtest2.cpp 
+   40  vi opovldtest2.cpp 
+   41  c++ -o opovldtest2 opovldtest2.cpp 
+   42  ./opovldtest2 
+   43  vi opovldtest2.cpp 
+   44  c++ -o opovldtest2 opovldtest2.cpp 
+   45  ./opovldtest2 
+   46  vi opovldtest2.cpp 
+   47  c++ -o opovldtest2 opovldtest2.cpp 
+   48  vi opovldtest2.cpp 
+   49  c++ -o opovldtest2 opovldtest2.cpp 
+   50  ./opovldtest2 
+   51  vi opovldtest2.cpp 
+   52  cp classtest1.cpp objcopytest.cpp 
+   53  vi objcopytest.cpp 
+   54  c++ -o objcopytest objcopytest.cpp 
+   55  ./objcopytest 
+   56  vi objcopytest.cpp 
+   57  c++ -o objcopytest objcopytest.cpp 
+   58  ./objcopytest 
+   59  vi objcopytest.cpp 
+   60  c++ -o objcopytest objcopytest.cpp 
+   61  ./objcopytest 
+   62  vi objcopytest.cpp 
+   63  c++ -o objcopytest objcopytest.cpp 
+   64  ./objcopytest 
+   65  vi objcopytest.cpp 
+   66  c++ -o objcopytest objcopytest.cpp 
+   67  ./objcopytest 
+   68  vi objcopytest.cpp 
+   69  c++ -o objcopytest objcopytest.cpp 
+   70  vi objcopytest.cpp 
+   71  c++ -o objcopytest objcopytest.cpp 
+   72  vi objcopytest.cpp 
+   73  c++ -o objcopytest objcopytest.cpp 
+   74  vi objcopytest.cpp 
+   75  c++ -o objcopytest objcopytest.cpp 
+   76  vi objcopytest.cpp 
+   77  c++ -o objcopytest objcopytest.cpp 
+   78  ./objcopytest 
+   79  vi objcopytest.cpp 
+   80  c++ -o objcopytest objcopytest.cpp 
+   81  ./objcopytest 
+   82  vi objcopytest.cpp 
+   83  c++ -o objcopytest objcopytest.cpp 
+   84  ./objcopytest 
+   85  vi objcopytest.cpp 
+   86  c++ -o objcopytest objcopytest.cpp 
+   87  ./objcopytest 
+   88  vi objcopytest.cpp 
+   89  cp objcopytest.cpp newdelobjtest.cpp
+   90  vi newdelobjtest.cpp 
+   91  c++ -o newdelobjtest newdelobjtest.cpp 
+   92  ./newdelobjtest 
+   93  vi newdelobjtest.cpp 
+   94  history > cmd-18-10-2017.txt 
