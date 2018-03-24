@@ -1,0 +1,48 @@
+    1  cd Foundations/Fundamentals/UNIX/IO/
+    2  cd ..
+    3  mkdir Concurrency
+    4  cd Concurrency/
+    5  cp ~/Shared/worker.h .
+    6  vi worker.h 
+    7  cp ../Basics/pidtest.c forktest.c
+    8  vi forktest.c 
+    9  cc -o forktest forktest.c 
+   10  ./forktest 
+   11  vi forktest.c 
+   12  cc -o forktest forktest.c 
+   13  ps
+   14  ./forktest 
+   15  vi forktest.c 
+   16  cc -o forktest forktest.c 
+   17  ./forktest 
+   18  vi forktest.c 
+   19  cc -o forktest forktest.c 
+   20  ./forktest 
+   21  vi forktest.c 
+   22  cc -o forktest forktest.c 
+   23  ./forktest 
+   24  vi forktest.c 
+   25  vi forksynctest.c
+   26  vi forktest.c 
+   27  vi forksynctest.c
+   28  cc -o forksynctest forksynctest.c 
+   29  ./forksynctest 
+   30  vi forksynctest.c
+   31  cc -o forksynctest forksynctest.c 
+   32  cc -o forksynctest forksynctest.c -lrt
+   33  ./forksynctest 
+   34  vi forksynctest.c
+   35  vi forkcoordtest.c
+   36  cc -o forkcoordtest forkcoordtest.c 
+   37  ./forkcoordtest 
+   38  vi forkcoordtest.c
+   39  vi forkexectest.c
+   40  cc -o forkexectest forkexectest.c 
+   41  ./forkexectest 
+   42  ./forkexectest xyz
+   43  ./forkexectest ../Basics/pidtest
+   44  vi forkexectest.c
+   45  cc -o forkexectest forkexectest.c 
+   46  ./forkexectest ../Basics/pidtest
+   47  ./forkexectest xyz
+   48  history > cmd28-09-15.txt

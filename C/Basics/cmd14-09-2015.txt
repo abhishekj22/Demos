@@ -1,0 +1,351 @@
+    1  ll ~/Shared/
+    2  exit
+    3  cd /usr/java/
+    4  sudo tar -xvzf ~/Shared/jdk-8u11-linux-i586.gz 
+    5  ls
+    6  cd
+    7  sudo vi .bashrc 
+    8  exit
+    9  java -version
+   10  javac
+   11  java 
+   12  exit
+   13  exit
+   14  ls
+   15  cd ~/Shared 
+   16  exit
+   17  cd ~/Shared/
+   18  ls
+   19  exit
+   20  java -version
+   21  cd 
+   22  echo $PATH
+   23  exit
+   24  java -version
+   25  exit
+   26  ls
+   27  mkdir Python
+   28  cd Python/
+   29  ls
+   30  vi stdlisttest.py
+   31  python stdlisttest.py
+   32  vi stdlisttest.py
+   33  python stdlisttest.py
+   34  vi stdlisttest.py
+   35  python stdlisttest.py
+   36  vi stdlisttest.py
+   37  python stdlisttest.py
+   38  vi stdlisttest.py
+   39  python stdlisttest.py
+   40  vi stdlisttest.py
+   41  python stdlisttest.py
+   42  vi stdlisttest.py
+   43  python stdlisttest.py
+   44  vi stdlisttest.py
+   45  python stdlisttest.py
+   46  vi stdlisttest.py
+   47  python stdlisttest.py
+   48  vi stdlisttest.py
+   49  python stdlisttest.py
+   50  vi stdlisttest.py
+   51  exit
+   52  cd Python/
+   53  ls
+   54  vi stdlisttest.py 
+   55  exit
+   56  ls
+   57  cd Python/
+   58  ll
+   59  cd ..
+   60  cd www/
+   61  ll
+   62  cd html/
+   63  ll
+   64  exit
+   65  cd Foundations/Fundamentals/Elements/
+   66  cp hello.s ~/Shared/
+   67  exit
+   68  exit
+   69  cd Foundations/Fundamentals/Elements/
+   70  ./variabletest 
+   71  exit
+   72  exit
+   73  cd Foundations/Fundamentals/Elements/
+   74  cp arraytest.s branchtest.s
+   75  vi branchtest.s 
+   76  as -o branchtest.o branchtest.s 
+   77  ld -o branchtest branchtest.o system.o 
+   78  ./branchtest 
+   79  vi branchtest.s 
+   80  ./branchtest 
+   81  vi looptest.s
+   82  as -o looptest.o looptest.s 
+   83  ld -o looptest looptest.o system.o 
+   84  ./looptest 
+   85  vi looptest.s
+   86  ld -o looptest looptest.o system.o 
+   87  as -o looptest.o looptest.s 
+   88  ld -o looptest looptest.o system.o 
+   89  ./looptest 
+   90  vi looptest.s
+   91  history >cmd10-09-2015.txt 
+   92  vi cmd10-09-2015.txt 
+   93  cd ..
+   94  cp -r Foundations ~/Shared/
+   95  exit
+   96  exit
+   97  ls
+   98  exit
+   99  ll
+  100  cd ..
+  101  exit
+  102  cd Foundations/Fundamentals/Elements/
+  103  ./variabletest 
+  104  exit
+  105  mkdir Foundations
+  106  cd Foundations/
+  107  mkdir Fundamentals
+  108  cd Fundamentals/
+  109  mkdir Elements
+  110  cd Elements/
+  111  cp ~/Shared/ia32/* .
+  112  ll
+  113  vi hello.s
+  114  vi ~/.vimrc 
+  115  vi hello.s
+  116  as -o hello.o hello.s 
+  117  ll
+  118  vi hello.o 
+  119  ld -o hello hello.o system.o 
+  120  ll
+  121  ./hello 
+  122  cd ..
+  123  ./hello
+  124  Elements/hello 
+  125  cd Elements/
+  126  ./hello
+  127  vi hello.s 
+  128  as -o hello.o hello.s 
+  129  vi hello.s 
+  130  as -o hello.o hello.s 
+  131  vi hello.s 
+  132  as -o hello.o hello.s 
+  133  ld -o hello hello.o system.o 
+  134  vi hello.s 
+  135  as -o hello.o hello.s 
+  136  ld -o hello hello.o system.o 
+  137  vi hello.s 
+  138  as -o hello.o hello.s 
+  139  ld -o hello hello.o system.o 
+  140  ./hello 
+  141  vi hello.s 
+  142  as -o hello.o hello.s 
+  143  ld -o hello hello.o system.o 
+  144  ./hello 
+  145  vi hello.s 
+  146  as -o hello.o hello.s 
+  147  ld -o hello hello.o system.o 
+  148  ./hello 
+  149  vi hello.s 
+  150  as -o hello.o hello.s 
+  151  ld -o hello hello.o system.o 
+  152  ./hello 
+  153  vi hello.s 
+  154  vi variabletest.s
+  155  as -o variabletest.o variabletest.s 
+  156  ld -o variabletest variabletest.o system.o 
+  157  ./variabletest 
+  158  vi variabletest.s
+  159  as -o variabletest.o variabletest.s 
+  160  ld -o variabletest variabletest.o system.o 
+  161  ./variabletest 
+  162  vi variabletest.s
+  163  as -o variabletest.o variabletest.s 
+  164  ld -o variabletest variabletest.o system.o 
+  165  ./variabletest 
+  166  vi variabletest.s
+  167  vi arraytest.s
+  168  as -o arraytest.o arraytest.s 
+  169  ld -o arraytest arraytest.o system.o 
+  170  ./arraytest 
+  171  cp arraytest.s branchtest.s
+  172  vi branchtest.s 
+  173  as -o branchtest.o branchtest.s 
+  174  ld -o branchtest branchtest.o system.o 
+  175  ./branchtest 
+  176  history >cmd10-09-2015.txt
+  177  vi cmd10-09-2015.txt 
+  178  exit
+  179  ll
+  180  cp Foundations/ ~/Shared/
+  181  cp -r Foundations/ ~/Shared/
+  182  cp -r ~/Shared/Foundations/ .
+  183  ll
+  184  ll Foundations/Fundamentals/Elements/
+  185  exit
+  186  ls
+  187  cd Foundations/
+  188  ll
+  189  cd Fundamentals/Elements/
+  190  exit
+  191  cp -r ~/Shared/Foundations/ .
+  192  exit
+  193  ll
+  194  cd Foundations/Fundamentals/Elements/
+  195  ll
+  196  cd ..
+  197  cd ../..
+  198  rmdir -r Foundations/
+  199  rmdir Foundations/
+  200  rm -r Foundations/
+  201  ll
+  202  cp -r ~/Shared/Foundations/ .
+  203  ll
+  204  ll Foundations/Fundamentals/Elements/
+  205  vi Foundations/Fundamentals/Elements/hello.s 
+  206  vi ~/.vimrc 
+  207  exit
+  208  ulimit -s
+  209  cd Foundations/Fundamentals/Elements/
+  210  vi looptest.s
+  211  as -o looptest.o looptest.s 
+  212  ld -o looptest looptest.o system.o 
+  213  ./looptest 
+  214  vi looptest.s
+  215  as -o looptest.o looptest.s 
+  216  ld -o looptest looptest.o system.o 
+  217  ./looptest 
+  218  vi looptest.s
+  219  vi mymacro.i
+  220  cp looptest.s macrotest.s
+  221  vi macrotest.s 
+  222  as -o macrotest.o macrotest.s 
+  223  vi macrotest.s 
+  224  as -o macrotest.o macrotest.s 
+  225  ld -o macrotest macrotest.o system.o 
+  226  ./macrotest 
+  227  vi macrotest.s 
+  228  objdump -d -M intel macrotest.o
+  229  vi myproc.s
+  230  as -o myproc.o myproc.s 
+  231  vi proctest.s
+  232  as -o proctest.o proctest.s 
+  233  ld -o proctest proctest.o system.o 
+  234  ld -o proctest proctest.o system.o myproc.o
+  235  ./proctest 
+  236  vi proctest.s
+  237  cp proctest.s stacktest.s
+  238  vi stacktest.s 
+  239  as -o stacktest.o stacktest.s 
+  240  ld -o stacktest stacktest.o system.o 
+  241  ld -o stacktest stacktest.o system.o myproc.o
+  242  ./stacktest 
+  243  vi stacktest.s 
+  244  as -o stacktest.o stacktest.s 
+  245  ld -o stacktest stacktest.o system.o myproc.o
+  246  ./stacktest 
+  247  vi stacktest.s 
+  248  as -o stacktest.o stacktest.s 
+  249  ld -o stacktest stacktest.o system.o myproc.o
+  250  vi proctest.s
+  251  objdump -d -M intel proctest.o
+  252  objdump -d -M intel proctest
+  253  ulimit -s
+  254  ulimit -s 20480
+  255  ulimit -s
+  256  history > cmd11-09-15.txt 
+  257  cd ../../..
+  258  cp -r Foundations/ ~/Shared/
+  259  exit
+  260  cd Foundations/Fundamentals/Elements/
+  261  ll
+  262  mv cmd10-09-2015.txt cmd10-09-15.txt
+  263  ll
+  264  exit
+  265  cd Foundations/
+  266  cd Fundamentals/
+  267  mkdir C
+  268  cd C/
+  269  mkdir Basics
+  270  cd Basics/
+  271  vi hello.c
+  272  cc -S hello.c 
+  273  ll
+  274  vi hello.s 
+  275  as -o hello.o hello.s
+  276  ll
+  277  ld -o hello hello.o /usr/lib/crt*.o /usr/lib/libc.so -dynamic-linker /lib/ld-2.12.so 
+  278  ll
+  279  ./hello 
+  280  vi variabletest1.c
+  281  cc -o variabletest1 variabletest1.c 
+  282  ./variabletest1 
+  283  objdump -t variabletest1
+  284  vi variabletest1.c
+  285  cc -c variabletest1.c
+  286  objdump -t variabletest1.o
+  287  vi variabletest1.c
+  288  history > cmd12-09-15.txt
+  289  cd ../../..
+  290  cd ../..
+  291  cd /SoftDev/
+  292  cp -r Foundations/ ~/Shared/
+  293  exit
+  294  cd Foundations/Fundamentals/C/Basics/
+  295  cp variabletest1.c variabletest2.c
+  296  vi variabletest2.c 
+  297  cc -c variabletest2.c
+  298  cc -o variabletest2 variabletest2.c
+  299  ./variabletest2
+  300  objdump -t variabletest2.o
+  301  objdump -d -M intel variabletest2.o
+  302  vi variabletest2.c 
+  303  vi arraytest.c
+  304  cc -o arraytest arraytest.c 
+  305  ./arraytest 
+  306  vi arraytest.c
+  307  cc -o arraytest arraytest.c 
+  308  ./arraytest 
+  309  cp arraytest.c iftest.c
+  310  vi iftest.c 
+  311  cc -o iftest iftest.c 
+  312  ./iftest 
+  313  vi iftest.c 
+  314  cc -o iftest iftest.c 
+  315  ./iftest 
+  316  cp iftest.c ifelsetest1.c
+  317  vi ifelsetest1.c 
+  318  cc -o ifelsetest1 ifelsetest1.c 
+  319  ./ifelsetest1 
+  320  vi ifelsetest1.c 
+  321  cc -o ifelsetest1 ifelsetest1.c 
+  322  ./ifelsetest1 
+  323  vi ifelsetest1.c 
+  324  cc -o ifelsetest1 ifelsetest1.c 
+  325  ./ifelsetest1 
+  326  vi ifelsetest2.c
+  327  cc -o ifelsetest2 ifelsetest2.c 
+  328  ./ifelsetest2
+  329  cp ifelsetest2.c switchtest.c
+  330  vi switchtest.c 
+  331  cc -o switchtest switchtest.c 
+  332  ./switchtest 
+  333  vi dowhiletest.c
+  334  cc -o dowhiletest dowhiletest.c 
+  335  ./dowhiletest 
+  336  vi dowhiletest.c
+  337  vi whiletest.c
+  338  cc -o whiletest whiletest.c 
+  339  ./whiletest 
+  340  cp whiletest.c fortest.c
+  341  vo fortest.c 
+  342  vi fortest.c 
+  343  cc -o fortest fortest.c 
+  344  ./fortest 
+  345  vi fortest.c 
+  346  cc -o fortest fortest.c 
+  347  ./fortest 
+  348  ls
+  349  cd ..
+  350  cd Basics/
+  351  history > cmd-14-09-2015.txt

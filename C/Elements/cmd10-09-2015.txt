@@ -1,0 +1,72 @@
+    1  mkdir Foundations
+    2  cd Foundations/
+    3  mkdir Fundamentals
+    4  cd Fundamentals/
+    5  mkdir Elements
+    6  cd Elements/
+    7  cp ~/Shared/ia32/* .
+    8  ll
+    9  vi hello.s
+   10  vi ~/.vimrc 
+   11  vi hello.s
+   12  as -o hello.o hello.s 
+   13  ll
+   14  vi hello.o 
+   15  ld -o hello hello.o system.o 
+   16  ll
+   17  ./hello 
+   18  cd ..
+   19  ./hello
+   20  Elements/hello 
+   21  cd Elements/
+   22  ./hello
+   23  vi hello.s 
+   24  as -o hello.o hello.s 
+   25  vi hello.s 
+   26  as -o hello.o hello.s 
+   27  vi hello.s 
+   28  as -o hello.o hello.s 
+   29  ld -o hello hello.o system.o 
+   30  vi hello.s 
+   31  as -o hello.o hello.s 
+   32  ld -o hello hello.o system.o 
+   33  vi hello.s 
+   34  as -o hello.o hello.s 
+   35  ld -o hello hello.o system.o 
+   36  ./hello 
+   37  vi hello.s 
+   38  as -o hello.o hello.s 
+   39  ld -o hello hello.o system.o 
+   40  ./hello 
+   41  vi hello.s 
+   42  as -o hello.o hello.s 
+   43  ld -o hello hello.o system.o 
+   44  ./hello 
+   45  vi hello.s 
+   46  as -o hello.o hello.s 
+   47  ld -o hello hello.o system.o 
+   48  ./hello 
+   49  vi hello.s 
+   50  vi variabletest.s
+   51  as -o variabletest.o variabletest.s 
+   52  ld -o variabletest variabletest.o system.o 
+   53  ./variabletest 
+   54  vi variabletest.s
+   55  as -o variabletest.o variabletest.s 
+   56  ld -o variabletest variabletest.o system.o 
+   57  ./variabletest 
+   58  vi variabletest.s
+   59  as -o variabletest.o variabletest.s 
+   60  ld -o variabletest variabletest.o system.o 
+   61  ./variabletest 
+   62  vi variabletest.s
+   63  vi arraytest.s
+   64  as -o arraytest.o arraytest.s 
+   65  ld -o arraytest arraytest.o system.o 
+   66  ./arraytest 
+   67  cp arraytest.s branchtest.s
+   68  vi branchtest.s 
+   69  as -o branchtest.o branchtest.s 
+   70  ld -o branchtest branchtest.o system.o 
+   71  ./branchtest 
+   72  history >cmd10-09-2015.txt

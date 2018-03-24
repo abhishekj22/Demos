@@ -1,0 +1,50 @@
+    1  cd Foundations/Fundamentals/C/Pointers/
+    2  vi simpleptrtest1.c
+    3  cc -o simpleptrtest1 simpleptrtest1.c 
+    4  ./simpleptrtest1 
+    5  vi simpleptrtest1.c
+    6  cc -o simpleptrtest1 simpleptrtest1.c 
+    7  ./simpleptrtest1 
+    8  vi simpleptrtest2.c
+    9  cc -o simpleptrtest2 simpleptrtest2.c 
+   10  ./simpleptrtest2
+   11  vi simpleptrtest2.c
+   12  cc -o simpleptrtest2 simpleptrtest2.c 
+   13  ./simpleptrtest2
+   14  vi structptrtest1.c
+   15  cc -o structptrtest1 structptrtest1.c 
+   16  ./structptrtest1 
+   17  vi structptrtest1.c
+   18  cc -o structptrtest1 structptrtest1.c 
+   19  ./structptrtest1 
+   20  vi structptrtest1.c
+   21  cc -o structptrtest1 structptrtest1.c 
+   22  vi structptrtest1.c
+   23  cc -o structptrtest1 structptrtest1.c 
+   24  ./structptrtest1 
+   25  vi structptrtest1.c
+   26  cc -o structptrtest1 structptrtest1.c 
+   27  ./structptrtest1 
+   28  vi structptrtest1.c
+   29  cc -o structptrtest1 structptrtest1.c 
+   30  ./structptrtest1 
+   31  vi structptrtest1.c
+   32  cc -o structptrtest1 structptrtest1.c 
+   33  vi structptrtest1.c
+   34  cc -o structptrtest1 structptrtest1.c 
+   35  cp structptrtest1.c structptrtest2.c
+   36  vi structptrtest2.c 
+   37  cc -o structptrtest2 structptrtest2.c 
+   38  ./structptrtest2
+   39  vi structptrtest2.c 
+   40  cc -o structptrtest2 structptrtest2.c 
+   41  ./structptrtest2
+   42  vi structptrtest2.c 
+   43  cc -o structptrtest2 structptrtest2.c 
+   44  ./structptrtest2
+   45  vi structptrtest2.c 
+   46  cc -o structptrtest2 structptrtest2.c 
+   47  vi structptrtest2.c 
+   48  cc -o structptrtest2 structptrtest2.c 
+   49  ./structptrtest2
+   50  history > cmd22-09-15.txt

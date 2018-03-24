@@ -1,0 +1,50 @@
+    1  pwd
+    2  cd Foundations/Fundamentals/Elements/
+    3  vi mycproc.s
+    4  as -o myproc.o myproc.s
+    5  as -o mycproc.o mycproc.s
+    6  objdump -t mycproc.o
+    7  cp cproctest1.c cproctest2.c
+    8  vi cproctest2.c 
+    9  cc -o cproctest2 cproctest2.c mycproc.o
+   10  ./cproctest2
+   11  cd ..
+   12  cd C/Basics/
+   13  vi box.h
+   14  vi box.c
+   15  cc -c box.o box.c
+   16  cc -c  box.c
+   17  vi functest2.c
+   18  cc -o functest2 functest2.c
+   19  cc -o functest2 functest2.c box.o
+   20  ./functest2
+   21  cd ..
+   22  mkdir UDT
+   23  cd UDT
+   24  cp ../Basics/box.h .
+   25  cp ../Basics/box.c .
+   26  vi box.h
+   27  cc -c box.c
+   28  vi box.h
+   29  cc -c box.c
+   30  vi box.c
+   31  cc -c box.c
+   32  cp ../Basics/functest2.c typedeftest1.c
+   33  vi typedeftest1.c 
+   34  cc -o typedeftest1 typedeftest1.c box.o
+   35  ./typedeftest1 
+   36  vi box.h
+   37  vi box.c
+   38  cc -c box.c
+   39  cc -o typedeftest1 typedeftest1.c box.o
+   40  ./typedeftest1 
+   41  cp typedeftest1.c typedeftest2.c
+   42  vi typedeftest2.c 
+   43  cc -o typedeftest2 typedeftest2.c box.o
+   44  ./typedeftest2
+   45  cc -g -o typedeftest2 typedeftest2.c box.o
+   46  gdb typedeftest2
+   47  cc -g -c box.c
+   48  cc -g -o typedeftest2 typedeftest2.c box.o
+   49  gdb typedeftest2
+   50  history >cmd17-09-15.txt

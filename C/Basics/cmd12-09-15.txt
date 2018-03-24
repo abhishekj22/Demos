@@ -1,0 +1,24 @@
+    1  cd Foundations/
+    2  cd Fundamentals/
+    3  mkdir C
+    4  cd C/
+    5  mkdir Basics
+    6  cd Basics/
+    7  vi hello.c
+    8  cc -S hello.c 
+    9  ll
+   10  vi hello.s 
+   11  as -o hello.o hello.s
+   12  ll
+   13  ld -o hello hello.o /usr/lib/crt*.o /usr/lib/libc.so -dynamic-linker /lib/ld-2.12.so 
+   14  ll
+   15  ./hello 
+   16  vi variabletest1.c
+   17  cc -o variabletest1 variabletest1.c 
+   18  ./variabletest1 
+   19  objdump -t variabletest1
+   20  vi variabletest1.c
+   21  cc -c variabletest1.c
+   22  objdump -t variabletest1.o
+   23  vi variabletest1.c
+   24  history > cmd12-09-15.txt

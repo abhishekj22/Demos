@@ -1,0 +1,48 @@
+    1  cd Foundations/Fundamentals/Elements/
+    2  vi looptest.s
+    3  as -o looptest.o looptest.s 
+    4  ld -o looptest looptest.o system.o 
+    5  ./looptest 
+    6  vi looptest.s
+    7  as -o looptest.o looptest.s 
+    8  ld -o looptest looptest.o system.o 
+    9  ./looptest 
+   10  vi looptest.s
+   11  vi mymacro.i
+   12  cp looptest.s macrotest.s
+   13  vi macrotest.s 
+   14  as -o macrotest.o macrotest.s 
+   15  vi macrotest.s 
+   16  as -o macrotest.o macrotest.s 
+   17  ld -o macrotest macrotest.o system.o 
+   18  ./macrotest 
+   19  vi macrotest.s 
+   20  objdump -d -M intel macrotest.o
+   21  vi myproc.s
+   22  as -o myproc.o myproc.s 
+   23  vi proctest.s
+   24  as -o proctest.o proctest.s 
+   25  ld -o proctest proctest.o system.o 
+   26  ld -o proctest proctest.o system.o myproc.o
+   27  ./proctest 
+   28  vi proctest.s
+   29  cp proctest.s stacktest.s
+   30  vi stacktest.s 
+   31  as -o stacktest.o stacktest.s 
+   32  ld -o stacktest stacktest.o system.o 
+   33  ld -o stacktest stacktest.o system.o myproc.o
+   34  ./stacktest 
+   35  vi stacktest.s 
+   36  as -o stacktest.o stacktest.s 
+   37  ld -o stacktest stacktest.o system.o myproc.o
+   38  ./stacktest 
+   39  vi stacktest.s 
+   40  as -o stacktest.o stacktest.s 
+   41  ld -o stacktest stacktest.o system.o myproc.o
+   42  vi proctest.s
+   43  objdump -d -M intel proctest.o
+   44  objdump -d -M intel proctest
+   45  ulimit -s
+   46  ulimit -s 20480
+   47  ulimit -s
+   48  history > cmd11-09-15.txt 

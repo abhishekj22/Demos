@@ -1,0 +1,67 @@
+    1  cd Foundations/Fundamentals/
+    2  mkdir UNIX
+    3  cd UNIX/
+    4  mkdir Basics
+    5  cd Basics/
+    6  vi libctest.c
+    7  cc -o libctest libctest.c 
+    8  ./libctest 
+    9  ./libctest jack jill john
+   10  ./libctest jack and jill john
+   11  ./libctest "jack and jill" john
+   12  vi libctest.c
+   13  cc -o libctest libctest.c 
+   14  ./libctest jack jill john
+   15  vi libctest.c
+   16  cc -o libctest libctest.c 
+   17  ./libctest jack jill john
+   18  objdump -t libctest
+   19  ./libctest jack jill john
+   20  vi libctest.c
+   21  ./libctest jack jill john
+   22  echo $?
+   23  vi libctest.c
+   24  cc -o libctest libctest.c 
+   25  ./libctest jack jill john
+   26  vi libctest.c
+   27  cp libctest.c syscalltest.c
+   28  vi syscalltest.c 
+   29  cc -o syscalltest syscalltest.c 
+   30  ./syscalltest jack jill john
+   31  vi syscalltest.c 
+   32  cc -o syscalltest syscalltest.c 
+   33  cp libctest.c ~/Shared/Test/
+   34  cp syscalltest.c ~/Shared/Test/
+   35  cp libctest.c posixtest.c
+   36  vi posixtest.c 
+   37  cc -o posixtest posixtest.c 
+   38  ./posixtest jack jill john
+   39  vi syscalltest.c
+   40  kill
+   41  kill -l
+   42  cp libctest.c signaltest1.c
+   43  vi signaltest1.c 
+   44  cc -o signaltest1 signaltest1.c 
+   45  ./signaltest1 
+   46  kill -l
+   47  vi signaltest1.c 
+   48  cc -o signaltest1 signaltest1.c 
+   49  ./signaltest1 
+   50  vi signaltest1.c 
+   51  cc -o signaltest1 signaltest1.c 
+   52  ./signaltest1 
+   53  echo $?
+   54  ./signaltest1 
+   55  vi signaltest1.c 
+   56  cc -o signaltest1 signaltest1.c 
+   57  ./signaltest1 
+   58  vi signaltest1.c 
+   59  cc -o signaltest1 signaltest1.c 
+   60  ./signaltest1 
+   61  vi signaltest1.c 
+   62  cc -o signaltest1 signaltest1.c 
+   63  ./signaltest1 
+   64  ps -A
+   65  man sigaction
+   66  man usleep
+   67  history > cmd24-09-15.txt

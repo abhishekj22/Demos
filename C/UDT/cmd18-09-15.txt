@@ -1,0 +1,24 @@
+    1  pwd
+    2  cd Foundations/Fundamentals/C/UDT/
+    3  ll
+    4  vi structtest.c
+    5  cc -o structtest structtest.c 
+    6  ./structtest 
+    7  echo $?
+    8  vi uniontest.c
+    9  cc -o uniontest uniontest.c 
+   10  ./uniontest 
+   11  echo $?
+   12  vi structuniontest.c
+   13  cc -o structuniontest structuniontest.c 
+   14  ./structuniontest 
+   15  echo $?
+   16  vi enumtest.c
+   17  cc -o enumtest enumtest.c 
+   18  ./enumtest 
+   19  vi enumtest.c
+   20  cd ..
+   21  ll
+   22  mkdir Pointers
+   23  cd Pointers/
+   24  history >cmd18-09-15.txt

@@ -1,0 +1,51 @@
+    1  pwd
+    2  cd C/Basics/
+    3  vi mymacro.h
+    4  vi macrotest1.c
+    5  ll /usr/include/*.h
+    6  vi macrotest1.c
+    7  cc -o macrotest1 macrotest1.c 
+    8  ./macrotest1 
+    9  vi macrotest2.c
+   10  cc -o squares macrotest2.c
+   11  ./squares 
+   12  cc -D _HIGH -o cubes macrotest2.c
+   13  ./cubes 
+   14  vi myfunc.c
+   15  cc -c myf
+   16  cc -c myfunc.c 
+   17  objdump -o myfunc.o
+   18  objdump -t myfunc.o
+   19  vi myfunc.c
+   20  cc -c myfunc.c 
+   21  objdump -t myfunc.o
+   22  vi myfunc.c
+   23  cc -c myfunc.c 
+   24  vi functest1.c
+   25  cc -o functest1 functest1.c 
+   26  cc -o functest1 functest1.c myfunc.o
+   27  ./functest1 
+   28  vi functest1.c
+   29  cc -o functest1 functest1.c myfunc.o
+   30  ./functest1 
+   31  vi functest1.c
+   32  cc -o functest1 functest1.c myfunc.o
+   33  vi functest1.c
+   34  cc -o functest1 functest1.c myfunc.o
+   35  vi functest1.c
+   36  cc -o functest1 functest1.c myfunc.o
+   37  ./functest1 
+   38  cd ../..
+   39  cd Elements/
+   40  vi cproctest1.c
+   41  cc -o cproctest1 cproctest1.c 
+   42  cc -o cproctest1 cproctest1.c myproc.o
+   43  ./cproctest1 
+   44  cp myproc.s mycproc.s
+   45  vi mycproc.s 
+   46  as -o mycproc.o mycproc.s
+   47  vi cproctest1.c
+   48  cc -o cproctest1 cproctest1.c mycproc.o
+   49  ./cproctest1 
+   50  history cmd16-09-15.txt
+   51  history >cmd16-09-15.txt

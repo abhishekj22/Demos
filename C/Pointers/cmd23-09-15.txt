@@ -1,0 +1,37 @@
+    1  cd Foundations/Fundamentals/C/Pointers/
+    2  vi funcptrtest.c
+    3  cc -o funcptrtest funcptrtest.c 
+    4  ./funcptrtest 
+    5  vi funcptrtest.c
+    6  cc -o funcptrtest funcptrtest.c 
+    7  ./funcptrtest 
+    8  vi funcptrtest.c
+    9  cc -o funcptrtest funcptrtest.c 
+   10  ./funcptrtest 
+   11  vi funcptrtest.c
+   12  cc -o funcptrtest funcptrtest.c 
+   13  ./funcptrtest 
+   14  vi funcptrtest.c
+   15  cc -o funcptrtest funcptrtest.c 
+   16  vi funcptrtest.c
+   17  cc -o funcptrtest funcptrtest.c 
+   18  ./funcptrtest 
+   19  vi voidptrtest.c
+   20  cc -o voidptrtest voidptrtest.c 
+   21  ./voidptrtest 
+   22  vi voidptrtest.c
+   23  cc -o voidptrtest voidptrtest.c 
+   24  ./voidptrtest 
+   25  vi voidptrtest.c
+   26  cc -o voidptrtest voidptrtest.c 
+   27  ./voidptrtest 
+   28  vi voidptrtest.c
+   29  cc -o voidptrtest voidptrtest.c 
+   30  ./voidptrtest 
+   31  vi voidptrtest.c
+   32  cc -o voidptrtest voidptrtest.c 
+   33  ./voidptrtest 
+   34  vi voidptrtest.c
+   35  cc -o voidptrtest voidptrtest.c 
+   36  ./voidptrtest 
+   37  history > cmd23-09-15.txt 
