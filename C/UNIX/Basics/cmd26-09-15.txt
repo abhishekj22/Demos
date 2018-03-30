@@ -1,0 +1,61 @@
+    1  cd Foundations/Fundamentals/UNIX/IO/
+    2  vi encbuf.c 
+    3  cc -c encbuf.c 
+    4  vi shobjtest1.c
+    5  cc -o shobjtest1 shobjtest1.c encbuf.o
+    6  ./shobjtest1 
+    7  objdump -d -M intel encbuf.o
+    8  objdump -d -M intel shobjtest1
+    9  vi encbuf.c
+   10  cc -c encbuf.c
+   11  vi encbuf.c
+   12  cc -c encbuf.c
+   13  ./shobjtest1 
+   14  cc -o shobjtest1 shobjtest1.c encbuf.o
+   15  ./shobjtest1 
+   16  vi encbuf.c
+   17  cc -c encbuf.c
+   18  cc -o shobjtest1 shobjtest1.c encbuf.o
+   19  ./shobjtest1 
+   20  cc -shared -fPIC -o libenc.so encbuf.c
+   21  vi encbuf.c
+   22  ll
+   23  objdump -d -M intel libenc.so 
+   24  cc -o shobjtest1 shobjtest1.c -lenc
+   25  cp libenc.so /usr/lib
+   26  sudo cp libenc.so /usr/lib
+   27  cc -o shobjtest1 shobjtest1.c -lenc
+   28  ./shobjtest1 
+   29  objdump -d -M intel shobjtest1
+   30  vi encbuf.c
+   31  cc -shared -fPIC -o libenc.so encbuf.c
+   32  sudo cp libenc.so /usr/lib
+   33  ./shobjtest1 
+   34  sudo rm /usr/lib/libenc.so 
+   35  cc -o shobjtest1 shobjtest1.c -lenc
+   36  cc -o shobjtest1 shobjtest1.c -L. -lenc
+   37  ./shobjtest1 
+   38  export LD_LIBRARY_PATH=.
+   39  ./shobjtest1 
+   40  vi ~/.bashrc
+   41  cc -shared -fPIC -o librev.so revbuf.c 
+   42  vi shobjtest2.c
+   43  cc -o shobjtest2 shobjtest2.c 
+   44  cc -o shobjtest2 shobjtest2.c -ldl
+   45  man dlopen
+   46  ./shobjtest2
+   47  ./shobjtest2 libenc.so
+   48  ./shobjtest2 librev.so
+   49  vi shobjtest2.c
+   50  ./shobjtest2 libxyz.so
+   51  vi shobjtest2.c
+   52  ./shobjtest2 libm.so
+   53  vi shobjtest2.c
+   54  vi shobjtest3.py
+   55  python shobjtest3.py 
+   56  vi shobjtest3.py
+   57  python shobjtest3.py 
+   58  vi shobjtest3.py
+   59  python shobjtest3.py 
+   60  vi shobjtest3.py
+   61  history > cmd26-09-15.txt 
